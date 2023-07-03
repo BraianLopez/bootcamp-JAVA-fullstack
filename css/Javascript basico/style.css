@@ -1,0 +1,19 @@
+*{
+    margin:0;
+    padding: 0;
+}
+.container{
+    background-color: blue;
+}
+.header{
+    background-color: yellow;
+}
+.navigator{
+    background-color: greenyellow;
+}
+.body{
+    background-color: green;
+}
+.footer{
+    background-color: black;
+}
