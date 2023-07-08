@@ -1,25 +1,23 @@
 *{
     margin: 0;
     padding: 0;
-     outline: 1px solid red; 
+      outline: 1px solid red;  
 }
 div.container{
     width: 970px;
     min-height: 800px;
     margin: 0 auto;
-    background-color: #2B1A1F;
+    background: radial-gradient( #6F5964, #1C0B10);
 }
     div.container div.header{
         background-color: #FDFDFD;
         width: 970px;
         height: 80px;
     }
-    div.container div.about_me>p{
-        font-family: Arial, Helvetica, sans-serif;
+    div.container div.header>p{
         font-size: 20px;
         font-weight: bold;
-        margin-left: 50px;
-        padding-bottom: 20px;
+       vertical-align: center;
         display: inline-block;
     }
 h1{
@@ -32,13 +30,18 @@ h1{
 h2{
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    background-color: gray;
+    font-weight: normal;
+    font: size 1.2em ;
+    
     margin: 0 auto;
+    padding: 10px;
+    background:linear-gradient(rgb(187, 187, 187),grey,rgb(187, 187, 187));
     }
 p{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-size: 17px;
     display: inline-block;
+    padding: 10px;
 }
     div.container div.about_me{
         width: 950px;
@@ -55,9 +58,36 @@ p{
   div.container div.about_me section.about{
     width: 475px;
     min-height:272px ;
-    background-color: #6F5964;
+    background:linear-gradient(to right,#FEFEFE,#DACBD9);
     margin: 20px;
     margin-left: 0;
     display: inline-block;
     vertical-align: top;
   }
+  div.container div.about_me section.about>a{
+    color: black;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  div.container div.experience{
+    width: 950px;
+    min-height: 300px;
+    margin: 0 auto;
+    align-items: justify content;
+  }
+        div.container div.experience section.sitios_web{
+    width: 300px;
+    min-height: 500px;
+    vertical-align: top;
+    background:linear-gradient(to right,#FEFEFE,#DACBD9);
+    display: inline-block;
+    
+}
+div.container div.experience section.sitios_web>img{
+    width: 300px;
+}
+div.container div.experience section.sitios_web>p{
+    width: 300px;
+    text-align: justify;
+    padding:0;
+}
