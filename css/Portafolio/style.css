@@ -1,24 +1,51 @@
 *{
     margin: 0;
     padding: 0;
-      outline: 1px solid red;  
+    /* outline: 1px solid red; */
 }
 div.container{
     width: 970px;
-    min-height: 800px;
     margin: 0 auto;
     background: radial-gradient( #6F5964, #1C0B10);
 }
-    div.container div.header{
+    div.container header{
         background-color: #FDFDFD;
         width: 970px;
         height: 80px;
     }
-    div.container div.header>p{
+    div.container header>p{
         font-size: 20px;
         font-weight: bold;
        vertical-align: center;
         display: inline-block;
+    }
+    a.sitios_web{
+        height: 25px;
+        box-sizing: border-box;
+        color: white;
+        padding: 4px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 12px;
+        font-weight: bold;
+        border:1px solid black;
+        background-color: rgb(37, 102, 37);
+        border-radius: 8px;
+        text-decoration: none;
+        display:block;
+        box-shadow: 3px 3px gray;
+    }
+    a.sitios_web.la_mode{
+        width: 60px;
+        margin-left: 110px;
+    }
+
+    a.sitios_web.fam_contacts{
+        width: 105px;
+        margin-left: 87px;
+    }
+    a.sitios_web.five_eleven{
+        width: 75px;
+        margin-left: 102px;
     }
 h1{
     font-family:cursive;
@@ -28,14 +55,19 @@ h1{
     display: inline-block;
 }
 h2{
+    font-size:large;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-    font-weight: normal;
-    font: size 1.2em ;
-    
+    font-weight: bold;
+    height: 35px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 5px;
+    box-sizing: border-box;
     background:linear-gradient(rgb(187, 187, 187),grey,rgb(187, 187, 187));
+    }
+    h2.technologies{
+        height: 30px;
+        font-size: medium;
     }
 p{
     font-family: Arial, Helvetica, sans-serif;
@@ -73,21 +105,65 @@ p{
     width: 950px;
     min-height: 300px;
     margin: 0 auto;
-    align-items: justify content;
-  }
-        div.container div.experience section.sitios_web{
-    width: 300px;
-    min-height: 500px;
-    vertical-align: top;
+    padding-left: 5px;
+    box-sizing: border-box;
+}
+div.container div.experience section.sitios_web{
+    width: 280px;
+    min-height: 530px;
     background:linear-gradient(to right,#FEFEFE,#DACBD9);
     display: inline-block;
-    
+    margin: 0 16px;
+    box-sizing: border-box;
+    vertical-align: top;
 }
-div.container div.experience section.sitios_web>img{
-    width: 300px;
-}
-div.container div.experience section.sitios_web>p{
-    width: 300px;
-    text-align: justify;
-    padding:0;
-}
+    div.container div.experience section.sitios_web>img{
+        width: 280px;
+    }
+    div.container div.experience section.sitios_web>p{
+        width: 250px;
+        text-align: justify;
+        padding: 15px;
+        font-size: 14px;
+    }
+    div.container div.experience section.sitios_web.la_mode>p{
+        margin-bottom: 65px;
+    }
+    div.container div.experience section.sitios_web.family_contacts>p{
+        margin-bottom: 50px;
+    }
+    div.container div.experience section.sitios_web div.img_tech{
+        width: 280px;
+        min-height: 100px;
+
+        box-sizing: border-box;
+    padding-left: 5px;
+    }
+    div.container div.experience section.sitios_web div.img_tech>img{
+        width: 40px;
+        margin: 5px;
+    }
+footer{
+    width: 970px;
+    min-height: 50px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    a.a-footer{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+    footer img.icono{
+        width: 30px;
+        margin: 5px;
+    }
+    footer .fila{
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
