@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 2px solid red; */
+}
+div.container{
+    width: 970px;
+    margin: 0 auto;
+    background: #D4D2AE;
+    padding: 30px;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-weight: bolder;
+}
+
+img.titulo{
+    width: 100px;
+    height: 60px;
+    background-color: white;
+}
