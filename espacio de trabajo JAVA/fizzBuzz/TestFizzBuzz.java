@@ -4,8 +4,8 @@ public class TestFizzBuzz{
 
         FizzBuzz resultado = new FizzBuzz();
 
-        String result = resultado.fizzBuzz(10);
+        String result = resultado.fizzBuzz(998);
 
-        System.out.println("el resultado es: "+ resultado.fizzBuzz(10));
+        System.out.println("el resultado es: "+ resultado.fizzBuzz(998));
     }
 }
