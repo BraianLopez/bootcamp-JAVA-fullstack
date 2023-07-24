@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* outline: 1px dotted red; */
+}
+#container{
+    width:970px;
+    height:auto;
+    background-color: rgb(6, 33, 52);
+}
+#container .cont_header > h1{
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:lighter;
+    padding:15px;
+    margin-right: 100px;
+    display: inline-block;
+}
+#container .cont_header>h1>span{
+    color: rgb(41, 166, 238);
+}
+#container .cont_header>a{
+    color:whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    margin: 20px;
+    display: float;
+    justify-content: right;
+}
+#container .cont_header>a.home{
+    margin-left: 20px;
+    color: rgb(1, 92, 145);
+    font-weight:lighter;
+    text-decoration: none;
+}
+#container>div.cont_main{
+    width: 950px;
+    height: auto;
+    margin: 0 auto;
+    background-color: aliceblue;
+}
+#container>div.cont_main>img.main_img{
+    width: 910px;
+    margin: 0 20px;
+    padding-top: 20px;
+}
+#box-1, #box-2, #box-3{
+    background-color: rgb(20, 104, 168);
+    height: 200px;
+    width: 274px;
+    margin: 20px;
+    display: inline-block;
+}
+#parrafos{
+    display: inline-block;
+    width: 273px;
+    height: 150px;
+    vertical-align: top;
+    padding: 10px;
+}
+#parrafos>.ult_p{
+    color: black;
+    margin: 10px;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:lighter;
+    display: flex;
+}
+#parrafos>a{        
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #408fcfe5;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.img_logo{
+    position: absolute;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 40px;
+    }
+    .more_info{
+        background: rgb(20, 104, 168);
+        color: white;
+        margin-top: 20px;
+        margin-left: 20px;
+        width: 120px;
+        height: 40px;
+        font-size: 15px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+        border-radius: 5px;
+        background: linear-gradient(#50b0ff 50%, #2394fd 50%);
+    }
+    h2{
+        margin-top: 15px;
+        margin-right: 50px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+        display: block;
+        text-align: center;
+    }
+    h3{
+        margin: 20px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: lighter;
+        display: inline;
+    }
+    h3.testim{
+        margin-left:320px;
+    }
+    p{
+        color: white;
+        margin: 10px;
+        font-size: 10px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-weight:lighter;
+        display: flex;
+    }
+    p.pm{
+        min-width: 15px;
+        color: black;
+        margin-top: 10px;
+        font-family: Arial;
+    } 
+    .build_img{
+        width: 273px;;
+        display: inline-block;
+        margin: 20px;
+        margin-bottom: 0px;
+    }
+    .testim_box{
+        width: 250px;
+        display: inline-block;
+        margin-left:40px;
+        margin-top: 20px;
+        vertical-align: top;
+
+    }
+    .viñeta {
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+        font-size: 15px;
+        display: inline-block;
+        position: relative;
+        height: 80px;
+        width: 240px;
+        padding: 20px;
+        background: #d8f2fdef;
+        box-shadow: 1px 12px 33px rgba(92, 92, 92, 0.041);
+    }
+    .viñeta:before {
+        border: 25px solid #d8f2fdef;
+        content: '';
+        border-left-color: transparent;
+        border-bottom-color: transparent;
+        border-right-color: transparent;
+        position: absolute;
+        bottom: -30px;
+        left: calc(20% - 25px);
+    }
+    #container>div.cont_footer{
+        height: 30px;
+        width: 950px;
+        margin-left:10px;
+        margin-top: 1px;
+        padding-top: 10px;
+        background-color: #d8f2fdef;
+    }
+    #container .cont_footer>a{
+        color:rgb(20, 104, 168);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        text-decoration: none;
+        margin: 20px;
+        margin-right: 0;
+        padding-top: 20px;
+        display: float;
+        justify-content: center;
+        vertical-align: center;
+    }
+    #container .cont_footer>a.home{
+        margin-left: 300px;
+        color: rgb(66, 181, 248);
+        font-weight:lighter;
+        text-decoration: none;
+    }
