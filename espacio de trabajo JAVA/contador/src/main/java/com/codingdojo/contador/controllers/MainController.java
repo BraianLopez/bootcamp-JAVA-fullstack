@@ -23,9 +23,11 @@ public class MainController {
 		return (Integer) valorSesion;
 	}
 	
-	
-	
-	@GetMapping("/")
+//	@GetMapping("/")
+//	public void index() {
+//		Redirect(/your_server);
+//	}
+	@GetMapping("/your_server")
 	public String index(HttpSession sesion) {
 		System.out.println(sesion.getAttribute("contador"));
 		int conteoActual = getContadorSesion(sesion);
@@ -34,9 +36,9 @@ public class MainController {
 		return "index.jsp";
 	}
 	
-	@GetMapping("/contador")
+	@GetMapping("/your_server/contador")
 	public String contador(HttpSession sesion, Model modelo) {
-		modelo.addAttribute("contador", getContadorSesion(sesion);
+		modelo.addAttribute("contador", getContadorSesion(sesion));
 		return "contador.jsp";
 	}
 }

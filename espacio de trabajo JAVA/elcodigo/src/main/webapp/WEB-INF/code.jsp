@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -14,10 +15,10 @@
 </head>
 <body>
 	<ul>
-	<c:forEach items"${datos }" var="elemento">
-		<li><c.out value="${elemento }"></c.out></li>
+	<c:forEach items="${arreglo }" var="elemento">
+		<li><c:out value="${elemento}"></c:out></li>
 	</c:forEach>
 	</ul>
-	<a class="btn-warning"href="/">Ir Atras</a></button>
+	<button><a class="btn-warning"href="/">Ir Atras</a></button>
 </body>
 </html>
