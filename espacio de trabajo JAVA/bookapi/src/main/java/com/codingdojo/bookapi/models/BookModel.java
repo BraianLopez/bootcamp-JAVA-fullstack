@@ -20,11 +20,15 @@ import jakarta.validation.constraints.Size;
 @Table(name = "books")
 public class BookModel {
 
+	
+	
+	//ATRIBUTOS DE CLASE
+	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 
-	@Size(min = 5, max = 200)
+	@Size(min = 5, max = 200, message="Agrega un titulo por favor")
 	private String title;
 
 	@NotBlank(message = "Por favor agrega una descripcion")
@@ -38,15 +42,15 @@ public class BookModel {
 	@Min(100)
 	private Integer numberOfPages;
 
-	// Esto no permitirá que el campo createdAt sea modificado después de su
-	// creación.
-	@Column(updatable = false)
+	
+	
+	@Column(updatable = false)//ESTO NO PERMITE QUE EL CAMPO createdAt SEA MODIFICADO DESPUES DE SU CREACION
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date createdAt;
 	@DateTimeFormat(pattern = "yyyy-MM-dd")
 	private Date updatedAt;
 
-	// constructores
+	// CONSTRUCTORES
 	public BookModel() {
 	}
 
@@ -56,8 +60,16 @@ public class BookModel {
 		this.language = lang;
 		this.numberOfPages = pages;
 	}
+	
+	public BookModel(Long id, String title, String desc, String lang, int pages) {
+		this.id = id;
+		this.title = title;
+		this.description = desc;
+		this.language = lang;
+		this.numberOfPages = pages;
+	}
 
-	// Otros getters y setters fueron removidos para resumir
+	//GETTERS AND SETTERS
 	public Long getId() {
 		return id;
 	}

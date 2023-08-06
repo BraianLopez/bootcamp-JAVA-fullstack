@@ -16,41 +16,59 @@ import com.codingdojo.bookapi.services.BookService;
 @RestController
 public class BookApiController {
 	
-//	    //INYECCION DEPENDENCIAS 
-//	    private final BookService bookService;
-//	    public BooksApi(BookService bookService){
-//	        this.bookService = bookService;
+	
+	//Inyeccion Depencioas
+//	 private final bookservice bookservice;
+//	    public BookApiController(bookservice bookservice){
+//	        this.bookservice = bookservice;
 //	    }
-
+	    
 	    @Autowired
 	    private BookService bookservice;
-
-
+	    
+	    //Mostrar informacion de todos los libros
 	    @GetMapping("/api/books")
 	    public List<BookModel> index() {
 	        return bookservice.allBooks();
 	    }
-//CREAR UN NUEVO LIBRO
+	    
+	    //Crear un libro
 	    @PostMapping(value="/api/books")
-	    public BookModel create(@RequestParam(value="title") String title, @RequestParam(value="description") String desc, @RequestParam(value="language") String lang, @RequestParam(value="pages") Integer numOfPages) {
+	    public BookModel create(@RequestParam(value="title") String title, 
+	    		@RequestParam(value="description") String desc,
+	    		@RequestParam(value="language") String lang, 
+	    		@RequestParam(value="pages") Integer numOfPages) {
 	        BookModel book = new BookModel(title, desc, lang, numOfPages);
 	        return bookservice.createBook(book);
 	    }
-//MOSTRAR INFORMACION DE UN LIBRO ESPECIFICO
+	    
+	    //Mostrar informacion de un libro especifico
 	    @GetMapping("/api/books/{id}")
 	    public BookModel show(@PathVariable("id") Long id) {
 	        BookModel book = bookservice.findBook(id);
 	        return book;
 	    }
-
-//ACTUALIZAR INFORMACION DE UN LIBRO ESPECIFICO
+	    
+	    //Actualizar informacion de un libro especifico
 	    @PutMapping("/api/books/{id}")
 	    public BookModel actualizar(@PathVariable("id")Long id,
-	    	@RequestParam(value="title") String title,
-	    	@RequestParam(value="description") String desc,
-	    	@RequestParam(value="language") String lang,
-	    	@RequestParam(value="title") Integer numberOfPages) {
-	    	return actualizar(id,title,desc,lang,numberOfPages);
+	    		@RequestParam(value="title") String title, 
+	    		@RequestParam(value="description") String desc,
+	    		@RequestParam(value="language") String lang, 
+	    		@RequestParam(value="pages") Integer numOfPages) {
+	    	BookModel book = new BookModel(id, title, desc, lang,numOfPages);
+	    	return bookservice.actualizarLibro(book);
+	    	
 	    }
+	    
+//	    
+//	    //Borra registro
+//	    @DeleteMapping("/api/books/{id}")
+//	    public void borrarRegistro(@PathVariable("id")Long id) {
+//	    	bookservice.borrarRegistro(id);
+//	    }
+	    	
+	    
 
+	
 }
