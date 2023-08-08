@@ -10,7 +10,7 @@ import com.codingdojo.bookapi1.repositories.BookRepo;
 @Service
 public class BookService {
 	//AGREGANDO EL BOOK AL REPOSITORIO COMO UNA DEPENDENCCIA
-    private final BookRepo bookRepository;
+    private  BookRepo bookRepository;
     
     public BookService(BookRepo bookRepository) {
         this.bookRepository = bookRepository;
@@ -32,7 +32,7 @@ public class BookService {
             return null;
         }
     }
-    //ACTUALIZANDO UN LIBRO.
+    //EDITANDO UN LIBRO.
     public BookModel updateBook(BookModel book) {
     	BookModel temporal = findBook(book.getId());
     	temporal.setTitle(book.getTitle());
@@ -40,6 +40,26 @@ public class BookService {
     	temporal.setNumberOfPages(book.getNumberOfPages());
     	temporal.setDescription(book.getDescription());
     	return bookRepository.save(temporal);
+    }
+    // SOBRECARGA DE METODO PARA EDITAR UN LIBRO
+    public BookModel updateBook(Long id, 
+    		String title, 
+    		String desc, 
+    		String lang, 
+    		Integer numOfPages) {
+    	BookModel temporal = bookRepository.findById(id).orElse(null);
+    	if(temporal != null) {
+    		temporal.setDescription(desc);
+    		temporal.setLanguage(lang);
+    		temporal.setNumberOfPages(numOfPages);
+    		temporal.setTitle(title);
+    		
+    		bookRepository.save(temporal);
+    		return temporal;
+    	}else {
+    		
+    		return temporal;
+    	}
     }
     //BORRANDO UN LIBRO
     public void deleteBook(Long id) {

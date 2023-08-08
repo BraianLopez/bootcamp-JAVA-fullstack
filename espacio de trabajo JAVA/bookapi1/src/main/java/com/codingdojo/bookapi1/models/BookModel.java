@@ -12,6 +12,7 @@ import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 @Entity
 @Table(name="books")
@@ -19,29 +20,47 @@ public class BookModel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    @Size(min = 5, max = 200)
+    
+    @Size(min = 5, max = 200, message="Agrega un titulo por favor")
     private String title;
-    @Size(min = 5, max = 200)
+    
+    @NotBlank(message = "Por favor agrega una descripcion")
+	@Size(min = 5, message="Minimo 5 caracteres")
+	@Column(columnDefinition = "TEXT")
     private String description;
+    
     @Size(min = 3, max = 40)
     private String language;
+    
     @Min(100)
     private Integer numberOfPages;
-    // Esto no permitirá que el campo createdAt sea modificado después de su creación.
-    @Column(updatable=false)
+    
+    @Column(updatable=false)//ESTO NO PERMITIRA QUE EL CAMPO createdAt SEA MODIFICADO DESPUES DE SU CREACION
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date createdAt;
     @DateTimeFormat(pattern="yyyy-MM-dd")
     private Date updatedAt;
     
+
+	@PrePersist
+    protected void onCreate(){			 //ASIGNA EL ESPACIO DE TIEMPO EXACTO  
+        this.createdAt = new Date();	 //EN EL QUE SE CREA UN LIBRO
+    }
+    @PreUpdate
+    protected void onUpdate(){			//ASIGNA EL ESPACIO DE TIEMPO EXACTO
+        this.updatedAt = new Date();	//EN EL QUE SE ACTUALIZA UN LIBRO
+    }
+    //CONSTRUCTORES
     public BookModel() {
     }
+    
     public BookModel(String title, String desc, String lang, int pages) {
         this.title = title;
         this.description = desc;
         this.language = lang;
         this.numberOfPages = pages;
     }
+    
     public BookModel(Long id, String title, String desc, String lang, int pages) {
         this.id= id;
     	this.title = title;
@@ -51,15 +70,9 @@ public class BookModel {
     }
     
     
-	@PrePersist
-    protected void onCreate(){
-        this.createdAt = new Date();
-    }
-    @PreUpdate
-    protected void onUpdate(){
-        this.updatedAt = new Date();
-    }
 
+    
+    //GETTERS AND SETTERS
   
     public Long getId() {
 		return id;

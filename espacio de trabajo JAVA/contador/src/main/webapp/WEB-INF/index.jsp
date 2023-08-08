@@ -18,6 +18,9 @@
 
 
 
-<h1>Hola Mundo</h1>
+<div class="container mx-auto">
+		<h1>Welcome User!!</h1>
+		<a href="/your_server/contador"> Ir a contador</a>
+	</div>
 </body>
 </html>

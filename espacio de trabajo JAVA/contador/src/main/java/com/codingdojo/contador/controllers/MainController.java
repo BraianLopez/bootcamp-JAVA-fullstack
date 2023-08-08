@@ -3,10 +3,12 @@ package com.codingdojo.contador.controllers;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import jakarta.servlet.http.HttpSession;
 
 @Controller
+//@RequestMapping("/")
 public class MainController {
 
 	//METODOS DE CLASE
@@ -40,5 +42,10 @@ public class MainController {
 	public String contador(HttpSession sesion, Model modelo) {
 		modelo.addAttribute("contador", getContadorSesion(sesion));
 		return "contador.jsp";
+	}
+	@GetMapping("/reset")
+	public String reset(HttpSession s) {
+		s.invalidate();
+		return "redirect:/your_server/contador";
 	}
 }

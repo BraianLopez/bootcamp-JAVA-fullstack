@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Todos los libros!</title>
+<title>Todos los libros</title>
 <!-- BOOTSTRAP  -->
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
@@ -22,27 +22,37 @@
 
 </head>
 <body>
-<h1>Bienvenido a la base de datos de BookApi</h1>
-<table>
-    <thead>
-        <tr>
-            <th>Title</th>
-            <th>Description</th>
-            <th>Language</th>
-            <th>Number of Pages</th>
-        </tr>
-    </thead>
-    <tbody>
-        <c:forEach items="${books}" var="book">
-        <tr>
-            <td><c:out value="${book.title}"/></td>
-            <td><c:out value="${book.description}"/></td>
-            <td><c:out value="${book.language}"/></td>
-            <td><c:out value="${book.numberOfPages}"/></td>
-        </tr>
-        </c:forEach>
-    </tbody>
-</table>
-<a href="/books/new"><button>New Book</button></a>
+	<h1>Bienvenido a la base de datos de BookApi</h1>
+	<table class= "table">
+		<thead>
+		
+			<tr>
+				<th>Title</th>
+				<th>Description</th>
+				<th>Language</th>
+				<th>Number of Pages</th>
+				<th>Edit</th>
+				<th>Delete</th>
+			</tr>
+		</thead>
+		<tbody>
+			<c:forEach items="${books}" var="book">
+				<tr>
+					<td><c:out value="${book.title}" /></td>
+					<td><c:out value="${book.description}" /></td>
+					<td><c:out value="${book.language}" /></td>
+					<td><c:out value="${book.numberOfPages}" /></td>
+					<td><a href="/books/${book.id}/edit">Edit Book</a></td>
+					<td>
+						<form action="/books/${book.id}" method="post">
+							<input type="hidden" name="_method" value="delete" />
+							 <input type="submit" value="Borrar libro" />
+						</form>
+					</td>
+				</tr>
+			</c:forEach>
+		</tbody>
+	</table>
+	<a href="/books/new"><button>New Book</button></a>
 </body>
 </html>

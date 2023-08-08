@@ -10,7 +10,6 @@
 <%@ page isErrorPage="true"%>
 <!DOCTYPE html>
 <html>
-<head>
 <meta charset="ISO-8859-1">
 <title>Crear libro</title>
 <!-- BOOTSTRAP  -->
@@ -22,29 +21,31 @@
 
 </head>
 <body>
-<h1>New Book</h1>
-<form:form action="/books" method="post" modelAttribute="book">
-    <p>
+<div class= "m-3">
+		<h1>New Book</h1>
+		<form:form action="/books" method="post" modelAttribute="book">
+    <div class= "mb-3">
         <form:label path="title">Title</form:label>
-        <form:errors path="title"/>
-        <form:input path="title"/>
-    </p>
-    <p>
+        <form:errors path="title" message =""/>
+        <form:input class="form-control" path="title"/>
+    </div>
+    <div class= "mb-3">
         <form:label path="description">Description</form:label>
         <form:errors path="description"/>
-        <form:textarea path="description"/>
-    </p>
-    <p>
+        <form:textarea class="form-control"  path="description"/>
+    </div>
+    <div class= "mb-3">
         <form:label path="language">Language</form:label>
         <form:errors path="language"/>
-        <form:input path="language"/>
-    </p>
-    <p>
+        <form:input class="form-control"  path="language"/>
+    </div>
+    <div class= "mb-3">
         <form:label path="numberOfPages">Pages</form:label>
         <form:errors path="numberOfPages"/>     
-        <form:input type="number" path="numberOfPages"/>
-    </p>    
+        <form:input class="form-control" type="number" path="numberOfPages"/>
+    </div>    
     <input type="submit" value="Submit"/>
 </form:form>
+</div>
 </body>
 </html>

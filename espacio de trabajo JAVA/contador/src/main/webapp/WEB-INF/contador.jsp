@@ -5,16 +5,17 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Current visit count</title>
 
 <!-- for Bootstrap CSS -->
 <link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css" />
-<!-- YOUR own local CSS -->
-<link rel="stylesheet" href="/css/main.css"/>
+
 <!-- For any Bootstrap that uses JS -->
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <body>
-<p><c:out value="'usted ha visitado la pagina '+ ${valorSession}+ veces."></c:out></p> 
+<p> Has visitado la web <c:out value="${contador}"  /> veces </p>
+<a href= "/reset"><button>Reiniciar contador</button></a>
+<a href= "/your_server"><button>Volver al inicio</button></a>
 </body>
 </html>

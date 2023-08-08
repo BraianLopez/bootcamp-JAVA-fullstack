@@ -2539,3 +2539,401 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact org.webjars:b
 2023-08-06 01:05:18,613 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2023-08-06 01:05:18,667 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2023-08-06 01:05:18,674 [Worker-312: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 12:55:50,386 [Worker-562: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 12:55:54,433 [Worker-562: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 12:55:54,459 [Worker-562: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:10:36,580 [Worker-570: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:10:46,772 [Worker-570: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:10:46,782 [Worker-570: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:34:36,268 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:34:37,392 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:34:37,400 [Worker-576: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:35:32,751 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:35:32,758 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:35:32,765 [Worker-575: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:55:10,260 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:55:10,339 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:55:10,346 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:55:55,535 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:55:55,603 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:55:55,608 [Worker-584: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:56:55,988 [Worker-583: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-06 13:57:03,072 [Worker-583: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.bookapi1:bookapi1:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\pom.xml.
+2023-08-06 13:57:21,476 [Worker-583: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/main/java
+2023-08-06 13:57:21,494 [Worker-583: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-06 13:57:21,495 [Worker-583: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-06 13:57:21,495 [Worker-583: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/test/java
+2023-08-06 13:57:24,757 [Worker-583: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for bookapi1
+2023-08-06 13:57:24,948 [Worker-583: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 28 sec
+2023-08-06 13:57:25,869 [Worker-586: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:57:25,871 [Worker-586: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:57:25,877 [Worker-586: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 13:57:25,877 [Worker-586: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of bookapi1
+2023-08-06 13:57:25,877 [Worker-586: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for bookapi1
+2023-08-06 13:58:00,972 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 13:58:00,981 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 13:58:00,987 [Worker-587: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:00:43,979 [Worker-584: Launching bookapi1 - Bookapi1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 14:00:43,986 [Worker-584: Launching bookapi1 - Bookapi1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:00:43,994 [Worker-584: Launching bookapi1 - Bookapi1Application] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:08:17,796 [Worker-592: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:08:17,796 [Worker-592: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:08:17,804 [Worker-592: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:10:55,193 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:10:55,194 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:10:55,201 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:13:53,037 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:13:53,037 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:13:53,044 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:14:11,065 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:14:11,066 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:14:11,086 [Worker-593: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:17:43,765 [Worker-588: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:17:43,765 [Worker-588: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:17:43,771 [Worker-588: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:17:59,389 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:17:59,389 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:17:59,395 [Worker-595: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:19:03,937 [Worker-597: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:19:03,937 [Worker-597: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:19:03,944 [Worker-597: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:56:56,201 [Worker-606: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 14:56:56,213 [Worker-606: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:56:56,220 [Worker-606: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 14:57:18,781 [Worker-609: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 14:57:18,790 [Worker-609: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 14:57:18,796 [Worker-609: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:11:59,368 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:11:59,377 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:11:59,404 [Worker-614: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:12:54,983 [Worker-617: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:12:55,245 [Worker-617: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:12:55,253 [Worker-617: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:13:43,218 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:13:43,248 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:13:43,254 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:16:09,541 [Worker-610: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:16:09,601 [Worker-610: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:16:09,608 [Worker-610: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:17:08,514 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:17:08,524 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:17:08,530 [Worker-615: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:19:45,383 [Worker-618: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:19:45,392 [Worker-618: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:19:45,400 [Worker-618: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:19:57,798 [Worker-619: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:19:58,395 [Worker-619: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:19:58,403 [Worker-619: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:29:23,099 [Worker-621: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:29:23,100 [Worker-621: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:29:23,107 [Worker-621: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:34:17,091 [Worker-625: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:34:17,100 [Worker-625: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:34:17,106 [Worker-625: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:35:19,549 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:35:19,550 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:35:19,555 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:36:41,520 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:36:41,531 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:36:41,537 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:37:26,956 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:37:26,957 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:37:26,963 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:37:55,704 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:37:55,704 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:37:55,711 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:38:42,145 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:38:42,146 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:38:42,284 [Worker-624: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:39:17,411 [Worker-626: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-06 15:39:18,819 [Worker-626: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.bookapi1:bookapi1:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\pom.xml.
+2023-08-06 15:39:26,818 [Worker-626: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/main/java
+2023-08-06 15:39:26,819 [Worker-626: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-06 15:39:26,819 [Worker-626: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-06 15:39:26,819 [Worker-626: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/test/java
+2023-08-06 15:39:27,685 [Worker-626: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for bookapi1
+2023-08-06 15:39:27,690 [Worker-626: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 10 sec
+2023-08-06 15:39:28,806 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:39:28,809 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:39:28,815 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:39:28,815 [Worker-626: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of bookapi1
+2023-08-06 15:39:28,815 [Worker-626: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for bookapi1
+2023-08-06 15:41:35,659 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:41:35,667 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:41:35,686 [Worker-626: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:41:58,329 [Worker-629: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 15:41:58,349 [Worker-629: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:41:58,355 [Worker-629: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 15:55:29,873 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:55:29,874 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 15:55:29,880 [Worker-632: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 16:00:48,117 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:00:48,118 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:00:48,124 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 16:01:20,027 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:01:20,028 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:01:20,036 [Worker-633: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 16:01:48,780 [Worker-635: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:01:48,780 [Worker-635: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:01:48,786 [Worker-635: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 16:04:48,704 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 16:04:48,712 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 16:04:48,717 [Worker-636: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:14:22,225 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:14:22,328 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:14:22,359 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:15:34,369 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 18:15:34,682 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:15:34,701 [Worker-637: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:16:10,217 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:16:10,218 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:16:10,243 [Worker-644: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:30:37,035 [Worker-649: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 18:30:37,437 [Worker-649: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:30:37,449 [Worker-649: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:33:08,382 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:33:08,383 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:33:08,388 [Worker-654: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:33:32,316 [Worker-651: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 18:33:32,360 [Worker-651: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:33:32,367 [Worker-651: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:42:13,930 [Worker-656: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 18:42:13,942 [Worker-656: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:42:13,949 [Worker-656: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:45:38,213 [Worker-663: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 18:45:38,239 [Worker-663: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:45:38,315 [Worker-663: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:55:08,022 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:55:08,023 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:55:08,029 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:55:39,156 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:55:39,156 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:55:39,162 [Worker-664: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:56:17,070 [Worker-665: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:56:17,070 [Worker-665: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:56:17,076 [Worker-665: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:57:25,052 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:57:25,053 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:57:25,060 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:58:27,641 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:58:27,641 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:58:27,647 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 18:59:07,573 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:59:07,574 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 18:59:07,579 [Worker-660: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 19:01:53,253 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:01:53,254 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:01:53,259 [Worker-667: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 19:04:12,933 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:04:12,934 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:04:12,941 [Worker-669: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 19:06:17,180 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:06:17,180 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 19:06:17,186 [Worker-668: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-06 20:17:48,551 [Worker-675: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-06 20:18:04,202 [Worker-675: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-06 20:18:04,213 [Worker-675: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-07 17:16:34,613 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2023-08-07 17:18:31,257 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:18:31,737 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:18:31,756 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-07 17:19:23,661 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:23,779 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:23,791 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\cadenas\src\test\resources
+2023-08-07 17:19:28,491 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:28,629 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:28,650 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-07 17:19:32,749 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:32,755 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:32,782 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\dojosyninjas\src\test\resources
+2023-08-07 17:19:35,805 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:35,811 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:35,823 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\elcodigo\src\test\resources
+2023-08-07 17:19:39,349 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:39,378 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:39,390 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\famconenrut\src\test\resources
+2023-08-07 17:19:43,372 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:43,888 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:43,893 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\holahumano\src\test\resources
+2023-08-07 17:19:48,221 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:48,231 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:48,243 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\holamundo\src\test\resources
+2023-08-07 17:19:50,728 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:50,809 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2023-08-07 17:19:51,086 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\mostrarfecha\src\test\resources
+2023-08-07 17:19:53,520 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:53,550 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:53,588 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\ninjagold\src\test\resources
+2023-08-07 17:19:57,273 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:57,283 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 17:19:57,305 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 17:19:59,763 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:59,769 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 17:19:59,792 [Worker-5: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\usoplantillas\src\test\resources
+2023-08-07 18:06:23,311 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:06:23,835 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:06:23,853 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:06:49,032 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:06:49,150 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:06:49,162 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:07:58,205 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:07:58,219 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:07:58,226 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:09:54,523 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:09:54,535 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:09:54,543 [Worker-25: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:11:11,535 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:11:11,545 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:11:11,554 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:12:24,302 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:12:24,313 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:12:24,321 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:12:54,446 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:12:54,455 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:12:54,466 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:13:28,186 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:13:28,322 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:13:28,333 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:15:01,619 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:15:01,636 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:15:01,686 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:17:17,105 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:17:17,124 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:17:17,131 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:17:54,085 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:17:54,246 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:17:54,256 [Worker-24: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:18:25,423 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:18:25,434 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:18:25,448 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:19:08,446 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-07 18:19:13,631 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.productosycategorias:productosycategorias:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\pom.xml.
+2023-08-07 18:19:18,163 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /productosycategorias/src/main/java
+2023-08-07 18:19:18,163 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /productosycategorias/src/main/resources
+2023-08-07 18:19:18,164 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /productosycategorias/src/main/resources
+2023-08-07 18:19:18,165 [Worker-20: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /productosycategorias/src/test/java
+2023-08-07 18:19:20,490 [Worker-20: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for productosycategorias
+2023-08-07 18:19:20,496 [Worker-20: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 12 sec
+2023-08-07 18:19:21,896 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:19:21,903 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:19:21,910 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:19:21,911 [Worker-27: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of productosycategorias
+2023-08-07 18:19:21,924 [Worker-27: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for productosycategorias
+2023-08-07 18:22:22,198 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:22:22,310 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:22:22,318 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:23:14,678 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-07 18:23:15,360 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.productosycategorias:productosycategorias:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\pom.xml.
+2023-08-07 18:23:17,108 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /productosycategorias/src/main/java
+2023-08-07 18:23:17,109 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /productosycategorias/src/main/resources
+2023-08-07 18:23:17,109 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /productosycategorias/src/main/resources
+2023-08-07 18:23:17,110 [Worker-26: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /productosycategorias/src/test/java
+2023-08-07 18:23:19,050 [Worker-26: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for productosycategorias
+2023-08-07 18:23:19,102 [Worker-26: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 4 sec
+2023-08-07 18:23:19,951 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-07 18:23:19,954 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-07 18:23:19,962 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-07 18:23:19,962 [Worker-28: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of productosycategorias
+2023-08-07 18:23:19,963 [Worker-28: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for productosycategorias
+2023-08-08 02:11:04,034 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:11:04,084 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:11:04,092 [Worker-40: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 02:13:49,059 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2023-08-08 02:14:49,441 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:14:49,628 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:14:49,648 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-08 02:15:05,144 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:05,248 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:05,317 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\cadenas\src\test\resources
+2023-08-08 02:15:07,883 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:07,913 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:07,934 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 02:15:10,902 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:10,993 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:11,000 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\dojosyninjas\src\test\resources
+2023-08-08 02:15:14,051 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:14,095 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:14,126 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\elcodigo\src\test\resources
+2023-08-08 02:15:17,047 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:17,241 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:17,251 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\famconenrut\src\test\resources
+2023-08-08 02:15:18,794 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:18,824 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:18,838 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\holahumano\src\test\resources
+2023-08-08 02:15:20,331 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:20,387 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:20,403 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\holamundo\src\test\resources
+2023-08-08 02:15:21,725 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:21,834 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 5 resources from src\main\resources to target\classes
+2023-08-08 02:15:21,861 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\mostrarfecha\src\test\resources
+2023-08-08 02:15:23,449 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:23,486 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:23,496 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\ninjagold\src\test\resources
+2023-08-08 02:15:25,291 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:25,336 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:15:25,347 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\productosycategorias\src\test\resources
+2023-08-08 02:15:27,047 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:27,085 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 02:15:27,098 [Worker-4: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\usoplantillas\src\test\resources
+2023-08-08 02:55:31,877 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:55:31,901 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 02:55:31,922 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:08:49,389 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:08:49,391 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:08:49,399 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:10:40,525 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:10:40,564 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:10:40,571 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:11:46,989 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:11:46,990 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:11:47,010 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:12:35,062 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-08 03:12:40,012 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.contador:contador:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\pom.xml.
+2023-08-08 03:12:43,930 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /contador/src/main/java
+2023-08-08 03:12:43,931 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /contador/src/main/resources
+2023-08-08 03:12:43,932 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /contador/src/main/resources
+2023-08-08 03:12:43,933 [Worker-18: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /contador/src/test/java
+2023-08-08 03:12:46,089 [Worker-18: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for contador
+2023-08-08 03:12:46,104 [Worker-18: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 11 sec
+2023-08-08 03:12:47,639 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:12:47,684 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:12:47,694 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:12:47,695 [Worker-21: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of contador
+2023-08-08 03:12:47,709 [Worker-21: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for contador
+2023-08-08 03:14:09,997 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2023-08-08 03:14:10,900 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.codingdojo.bookapi1:bookapi1:0.0.1-SNAPSHOT @ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\pom.xml.
+2023-08-08 03:14:12,490 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/main/java
+2023-08-08 03:14:12,490 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-08 03:14:12,491 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /bookapi1/src/main/resources
+2023-08-08 03:14:12,492 [Worker-22: Updating Maven Project] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /bookapi1/src/test/java
+2023-08-08 03:14:15,045 [Worker-22: Updating Maven Project] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Cleaning filtered folder for bookapi1
+2023-08-08 03:14:15,053 [Worker-22: Updating Maven Project] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 5 sec
+2023-08-08 03:14:16,702 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:14:16,705 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:14:16,713 [Worker-19: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\bookapi1\src\test\resources
+2023-08-08 03:14:16,714 [Worker-19: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of bookapi1
+2023-08-08 03:14:16,714 [Worker-19: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for bookapi1
+2023-08-08 03:16:03,934 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:16:03,944 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:16:03,950 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:17:15,751 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:17:15,961 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:17:16,158 [Worker-14: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:18:20,975 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:18:20,983 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:18:20,990 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:19:35,014 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:19:35,015 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:19:35,025 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:20:39,664 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:20:39,666 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:20:39,678 [Worker-20: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:21:07,479 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2023-08-08 03:21:07,535 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:21:07,653 [Worker-21: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:22:34,624 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:22:34,625 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:22:34,646 [Worker-17: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
+2023-08-08 03:23:56,388 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:23:56,389 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2023-08-08 03:23:56,396 [Worker-23: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\contador\src\test\resources
