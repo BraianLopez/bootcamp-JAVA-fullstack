@@ -1,0 +1,5 @@
+package com.codingdojo.bookapi.controllers;
+
+public class BookController {
+
+}

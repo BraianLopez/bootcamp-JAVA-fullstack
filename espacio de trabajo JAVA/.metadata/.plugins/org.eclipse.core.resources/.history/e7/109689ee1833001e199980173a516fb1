@@ -1,0 +1,5 @@
+package com.codingdojo.dojosyninjas.controllers;
+
+public class RootController {
+
+}

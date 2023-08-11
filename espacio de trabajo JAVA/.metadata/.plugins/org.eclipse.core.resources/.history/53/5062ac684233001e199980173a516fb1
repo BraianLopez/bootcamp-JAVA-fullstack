@@ -1,0 +1,21 @@
+package com.codingdojo.holahumano.controllers;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+@RestController
+public class HolaHumano {
+	@RequestMapping("/{nombre}")
+	public String Hello(@PathVariable("nombre")String nombre) {
+		return "Hola "+ nombre;
+//	}
+//	@GetMapping("/coding/python")
+//	public String python() {
+//		return "Hello ";
+//	}
+//	@GetMapping("/coding/java")
+//	public String java() {
+//		return "Java/Spring es mejor!";
+}
+}

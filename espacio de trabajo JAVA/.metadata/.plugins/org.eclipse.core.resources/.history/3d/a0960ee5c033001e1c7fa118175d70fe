@@ -1,0 +1,5 @@
+package com.codingdojo.bookapi1.models;
+
+public class BookModel {
+
+}

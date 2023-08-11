@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;Lookify_SpringBoot_CodingDojo&apos;" deleteContents="true" description="Delete resource &apos;Lookify_SpringBoot_CodingDojo&apos;" element1="/Lookify_SpringBoot_CodingDojo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1691790438838"/>&#x0A;<refactoring comment="Delete resource &apos;MaestroDeObjetos&apos;" deleteContents="false" description="Delete resource &apos;MaestroDeObjetos&apos;" element1="/MaestroDeObjetos" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1691790444609"/>
+</session>

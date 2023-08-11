@@ -1,0 +1,20 @@
+INDEX VERSION 1.4+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3791054811.index
+3459513502.index
+2180206842.index
+3884182390.index
+931373752.index
+460347104.index
+3859831483.index
+2197467751.index
+1551487381.index
+4285759839.index
+1039644528.index
+3096833591.index
+2831207165.index
+2885576738.index
+2310338961.index
+1931161502.index
+3259986486.index
+1081590509.index
+2698415615.index
