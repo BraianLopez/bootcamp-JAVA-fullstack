@@ -42,10 +42,24 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\lookify-javi\Lookify_SpringBoot_CodingDojo"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\buggylookifycode"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\BuggyLookifyCode"/>
 			<item value="C:\Users\familia\Documents\workspace-spring-tool-suite-4-4.16.1.RELEASE\holamundo"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\MaestroDeObjetos"/>
+		</list>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item key="WizardProjectsImportPage.STORE_NESTED_PROJECTS" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
+		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\buggylookifycode"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
 		</list>
 	</section>
 </section>

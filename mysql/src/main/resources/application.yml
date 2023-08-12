@@ -1,0 +1,14 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/languages?createDatabaseIfNotExist=true
+    username: ${MYSQL_U}  #root segun dojo
+    password: ${MYSQL_P}  #root segun dojo
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mvc:
+    hiddenmethod:
+      filter:
+        enabled: true #esta conf me permite otros verbos http en los metodos del form

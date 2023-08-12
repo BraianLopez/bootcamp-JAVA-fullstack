@@ -7,6 +7,8 @@ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metada
 \cadenas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\173210288.index
 \licencias\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3040705839.index
+\lenguajes\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\143106046.index
 \usoplantillas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3259986486.index
