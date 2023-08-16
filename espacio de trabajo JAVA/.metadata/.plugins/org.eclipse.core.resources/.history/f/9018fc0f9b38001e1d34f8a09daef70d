@@ -1,0 +1,23 @@
+package com.codingdojo.lenguajes.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+import com.codingdojo.lenguajes.services.LenguajesService;
+
+
+
+@Controller
+public class LenguajesController {
+	private final LenguajesService lenguajesService;
+    
+    public LenguajesController(LenguajesService lenguajesService) {
+        this.lenguajesService = lenguajesService;
+    }
+    
+    @GetMapping("/")
+    public String root() {
+    	return "redirect:/languages";
+    }
+    
+}

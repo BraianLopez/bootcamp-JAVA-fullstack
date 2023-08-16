@@ -1,0 +1,14 @@
+package com.codingdojo.dojosyninjas.controllers;
+
+import org.springframework.stereotype.Controller;
+
+import com.codingdojo.dojosyninjas.services.MainService;
+
+@Controller
+public class DojoController {
+	private final MainService mainServ;
+
+	public DojoController(MainService service) {
+		this.mainServ = service;
+	}
+}

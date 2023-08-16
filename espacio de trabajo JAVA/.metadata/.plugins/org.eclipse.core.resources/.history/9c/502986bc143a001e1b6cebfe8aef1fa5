@@ -1,0 +1,17 @@
+package com.codingdojo.licencias.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+
+import com.codingdojo.licencias.models.Persona;
+
+@Controller
+public class MainController {
+
+	
+	@GetMapping("persons/new")
+	public String formularioPersona(@ModelAttribute("persona") Persona persona) {
+		return"newperson.jsp";
+	}
+}

@@ -1,0 +1,5 @@
+package com.codingdojo.lenguajes.repositories;
+
+public interface LenguajesRepo {
+
+}

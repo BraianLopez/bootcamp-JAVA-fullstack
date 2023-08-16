@@ -1,0 +1,5 @@
+package com.codingdojo.licencias.models;
+
+public class Licencia {
+
+}

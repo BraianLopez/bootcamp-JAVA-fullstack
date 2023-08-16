@@ -1,0 +1,18 @@
+package com.codingdojo.dojosyninjas.services;
+
+import org.springframework.stereotype.Service;
+
+import com.codingdojo.dojosyninjas.repositories.DojoRepo;
+import com.codingdojo.dojosyninjas.repositories.NinjaRepo;
+
+@Service
+public class MainService {
+	private final DojoRepo dojoRepo;
+	private final NinjaRepo ninjaRepo;
+
+	public MainService(DojoRepo dojoR, NinjaRepo ninjaR) {
+		this.dojoRepo = dojoR;
+		this.ninjaRepo = ninjaR;
+	}
+
+	}

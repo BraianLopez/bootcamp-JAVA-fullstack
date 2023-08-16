@@ -1,0 +1,5 @@
+package com.codingdojo.bookapi1.repositories;
+
+public interface LicenciasRepo {
+
+}

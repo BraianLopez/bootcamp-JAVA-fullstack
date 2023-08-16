@@ -1,0 +1,47 @@
+package com.codingdojo.lenguajes.controllers;
+
+import java.util.List;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.codingdojo.lenguajes.models.Lenguajes;
+import com.codingdojo.lenguajes.services.LenguajesService;
+
+import jakarta.validation.Valid;
+
+@Controller
+public class LenguajesController {
+	private final LenguajesService lenguajesService;
+
+	public LenguajesController(LenguajesService lenguajesService) {
+		this.lenguajesService = lenguajesService;
+	}
+
+	@RequestMapping("/")
+	public String root() {
+		return "redirect:/languages";
+	}
+
+	// MUESTRA TODOS LOS LENGUAJES CREADOS HASTA EL MOMENTO
+	@GetMapping("/languages")
+	public String show(@ModelAttribute("language") Lenguajes lenguaje, Model viewModel) {
+		List<Lenguajes> todosLenguajes = lenguajesService.todosLenguajes();
+		viewModel.addAttribute("languages", todosLenguajes);
+		return "languages.jsp";
+	}
+
+	@PostMapping("/languages")
+	public String crearLenguaje(@Valid @ModelAttribute("language") Lenguajes lenguaje, BindingResult resultado) {
+		if (resultado.hasErrors()) {
+
+			return "languages.jsp";
+		}
+		LenguajesService.crearLenguaje(lenguaje);
+		return "redirect:/";
+}

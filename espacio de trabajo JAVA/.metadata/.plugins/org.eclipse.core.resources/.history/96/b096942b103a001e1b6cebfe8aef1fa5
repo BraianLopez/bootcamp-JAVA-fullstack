@@ -1,0 +1,10 @@
+package com.codingdojo.licencias.models;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name="Licencias")
+public class Licencia {
+
+}
