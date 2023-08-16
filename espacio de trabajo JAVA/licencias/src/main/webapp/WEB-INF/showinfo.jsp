@@ -14,7 +14,7 @@
 <meta charset="ISO-8859-1">
 <title>AQUI EL TITULO DE TU PLNATILLA</title>
 <!-- BOOTSTRAP  -->
-<link rel="stylesheet" href="/webjars/bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
 <!-- cambiar para que coincida con Tu archivo/estructura de nombres -->
 <link rel="stylesheet" href="/css/main.css">

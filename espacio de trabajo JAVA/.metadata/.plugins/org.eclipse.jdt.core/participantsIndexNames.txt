@@ -1,12 +1,18 @@
 INDEX VERSION 1.131
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2396746287.index
+\dojosyninjas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444747155.index
 \elcodigo\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1876417161.index
+\dojosyninjas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1980575085.index
 \mostrarfecha\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3171001149.index
 \cadenas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\173210288.index
 \licencias\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\487483685.index
+\ideas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3040705839.index
 \lenguajes\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\143106046.index

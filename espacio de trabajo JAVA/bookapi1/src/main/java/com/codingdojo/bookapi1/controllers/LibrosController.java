@@ -42,7 +42,7 @@ public class LibrosController {
 	    public String newBook(@ModelAttribute("book") BookModel book) {
 	        return "/books/new.jsp";
 	    }
-	    @PostMapping(value="/books")
+	    @PostMapping("/books")
 	    public String create(@Valid @ModelAttribute("book") BookModel book, BindingResult result) {
 	        if (result.hasErrors()) {
 	            return "/books/new.jsp";

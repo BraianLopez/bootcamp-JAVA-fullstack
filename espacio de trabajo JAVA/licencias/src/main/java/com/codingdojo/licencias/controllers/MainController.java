@@ -19,53 +19,60 @@ import jakarta.validation.Valid;
 @Controller
 public class MainController {
 
-	// Inyeccion Dependencias
-	@Autowired
-	private MainService mainService;
-	
-	@GetMapping("/")
-	public String root(Model viewModel) {
+	//INYECCION DE DEPENDENCIAS
+		@Autowired
+		private MainService mainService;
 		
-		List<Persona> todosUsuarios = mainService.todasPersonas();
-		viewModel.addAttribute("todos", todosUsuarios);
-		return "index.jsp";
-	}
-
-	@GetMapping("/persons/new")
-	public String formularioPersona(@ModelAttribute("persona") Persona persona) {
-		return "newperson.jsp";
-	}
-
-	@PostMapping("/persons/new")
-	public String crearPersona(@Valid @ModelAttribute("persona") Persona persona, BindingResult resultado) {
-		if (resultado.hasErrors()) {
-
+	
+		@GetMapping("/persons/{id}")
+		public String infoPersonas(Model viewModel) {
+			List<Persona> todosUsuarios = mainService.todasPersonas();
+			viewModel.addAttribute("infoUsuario", todosUsuarios);
+			return "index.jsp";
+		}
+		
+		
+		@GetMapping("/persons/new")
+		public String formularioPersona(@ModelAttribute("persona") Persona persona) {		
 			return "newperson.jsp";
 		}
-		mainService.crearPersona(persona);
-		return "redirect:/";
-
-	}
-
-	@GetMapping("/licencias/new")
-	public String formularioLicencia(@ModelAttribute("licencia") Licencia licencia, Model viewModel) {
-//		List<Persona> todosUsuarios = mainService.todasPersonas();
-//		viewModel.addAttribute("personas", todosUsuarios);
-		viewModel.addAttribute("personas", mainService.obtenerPersonasSinLic());
-		return "newlic.jsp";
-	}
-
-	@PostMapping("licencias/new")
-	public String crearLicencia(@Valid @ModelAttribute("licencia") Licencia licencia, 
-			BindingResult resultado, Model viewModel) {
-		if (resultado.hasErrors()) {
-//			viewModel.addAttribute("personas", mainService.todasPersonas());
-			viewModel.addAttribute("personas", mainService.obtenerPersonasSinLic());
+		
+		
+		//CREAR PERSONA
+		@PostMapping("/persons/new")
+		public String crearPersona(@Valid @ModelAttribute("persona") Persona persona, BindingResult resultado) {
+			
+			if(resultado.hasErrors()) {
+				return "newperson.jsp";
+			} 
+			mainService.crearPersona(persona);
+			
+			return "redirect:/";
+		}
+		
+		
+		
+		@GetMapping("/licenses/new")
+		public String formularioLicencia(@ModelAttribute("licencia") Licencia licencia, Model viewModel) {
+			
+			//List<Persona> allUsers = mainService.allPerson();
+			//viewModel.addAttribute("allUsers", allUsers);
+			viewModel.addAttribute("personas", mainService.personasSinLic());
 			return "newlic.jsp";
 		}
-		mainService.crearLicencia(licencia);
-
-		return "redirect:/";
-	}
-
+		
+		
+		//CREAR LICENCIA
+		@PostMapping("/licenses/new")
+		public String crearLicencia(@Valid @ModelAttribute("licencia") Licencia licencia, 
+				BindingResult resultado, Model viewModel) {
+				
+			if(resultado.hasErrors()) {
+				//viewModel.addAttribute("allUsers", mainService.allPerson());
+				return "newlic.jsp";
+			} 
+			mainService.crearLicencia(licencia);
+			
+			return "redirect:/";
+		}
 }

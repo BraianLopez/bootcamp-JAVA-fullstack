@@ -6,8 +6,8 @@ import org.springframework.stereotype.Repository;
 import com.codingdojo.licencias.models.Licencia;
 
 @Repository
-public interface LicenciaRepo extends CrudRepository<Licencia, Long>{
-	
-	public Licencia findTopByOrderByNumberDesc();
+public interface LicenciaRepo  extends CrudRepository<Licencia, Long>{
 
+	
+	
 }

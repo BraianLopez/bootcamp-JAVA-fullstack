@@ -42,6 +42,9 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\ideas"/>
+			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\licencias"/>
+			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\lenguajes-matif"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\lookify-javi\Lookify_SpringBoot_CodingDojo"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\buggylookifycode"/>
 			<item value="C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\BuggyLookifyCode"/>
