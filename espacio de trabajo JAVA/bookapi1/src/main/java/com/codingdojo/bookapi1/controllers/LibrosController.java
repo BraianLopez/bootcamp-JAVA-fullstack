@@ -53,9 +53,10 @@ public class LibrosController {
 	    }
 	    //MUESTRA INFO DE UN LIBRO ESPECIFICO
 	    @GetMapping("/books/{id}")
-		public String show(@PathVariable("id") Long id) {
-			bookService.findBook(id);
-			return "/books/show.jsp";
+		public String show(@PathVariable("id") Long id, Model model) {
+	    	 BookModel book = bookService.findBook(id);
+		        model.addAttribute("book", book);
+		        return "/books/show.jsp";
 		}
 	  //ELIMINA UN LIBRO ESPECIFICO
 	    @DeleteMapping("/books/{id}")
