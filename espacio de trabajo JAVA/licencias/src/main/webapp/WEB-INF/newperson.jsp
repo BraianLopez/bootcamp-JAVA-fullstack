@@ -22,22 +22,23 @@
 
 </head>
 <body>
-	<div class="container">
-		<h2>Nueva Persona</h2>
+	<div class="container mx-auto col-6">
+		<h2>Nuevo usuario</h2>
 		<form:form action="/persons/new" method="POST"
 			modelAttribute="persona">
 			<div class="form-group">
-				<form:label class="form-label" path="firstName">First Name</form:label>
+				<form:label class="form-label" path="firstName">Nombre</form:label>
 				<form:errors class="text-danger" path="firstName" />
 				<form:input class="form-control" path="firstName" />
 			</div>
 			<div class="form-group">
-				<form:label class="form-label" path="lastName">Last Name</form:label>
+				<form:label class="form-label" path="lastName">Apellido</form:label>
 				<form:errors class="text-danger" path="lastName" />
 				<form:input class="form-control" path="lastName" />
 			</div>
-			<button class="btn btn-success">Crear Persona</button>
+			<button class="btn btn-success mt-4">Registar usuario</button>
 		</form:form>
+		<a class="btn btn-success mt-4"href="/">Ir al inicio</a>
 	</div>
 </body>
 </html>

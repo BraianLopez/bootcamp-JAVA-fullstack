@@ -9,5 +9,5 @@ import com.codingdojo.licencias.models.Licencia;
 public interface LicenciaRepo  extends CrudRepository<Licencia, Long>{
 
 	
-	
+	public Licencia findTopByOrderByNumberDesc();
 }

@@ -1,8 +1,0 @@
-package com.codingdojo.lenguajes.services;
-
-import org.springframework.stereotype.Service;
-
-@Service
-public class LenguajesService {
-
-}

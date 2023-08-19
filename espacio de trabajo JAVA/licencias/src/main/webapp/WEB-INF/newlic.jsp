@@ -23,9 +23,9 @@
 
 </head>
 <body>
-	<div class="container mx-auto">
+	<div class="container mx-auto col-6">
 		<h2>Nueva Licencia</h2>
-		<form:form action="/licencias/new" method="POST"
+		<form:form action="/licenses/new" method="POST"
 			modelAttribute="licencia">
 			<div class="form-group">
 			<form:label class="form-label" path="persona">Persona: </form:label>
@@ -47,8 +47,9 @@
 				<form:errors class="text-danger" path="expirationDate" />
 				<form:input type="date" class="form-control" path="expirationDate" />
 			</div>
-			<button class="btn btn-success">Crear Licencia</button>
+			<button class="btn btn-success mt-4">Crear Licencia</button>
 		</form:form>
+		<a href="/" class="btn btn-success mt-4" role="button" data-bs-toggle="button">Ir al inicio</a>
 	</div>	
 </body>
 </html>

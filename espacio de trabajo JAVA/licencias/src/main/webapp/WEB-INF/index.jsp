@@ -12,7 +12,7 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>AQUI EL TITULO DE TU PLNATILLA</title>
+<title>Licencias</title>
 <!-- BOOTSTRAP  -->
 <link rel="stylesheet" href="/webjars/bootstrap/5.2.3/css/bootstrap.min.css">
 <script src="/webjars/bootstrap/js/bootstrap.min.js"></script>
@@ -24,23 +24,23 @@
 <body>
 <div class="container">
 		<h1>Bienvenido a la DB de licencias de conducir</h1>
-		<a class="btn btn-info my-4" href="/persons/new">Registra un usuario</a>
-		<a class="btn btn-info my-4"href="/licenses/new">Agrega una licencia</a>
+		<a class="btn btn-success my-4" href="/persons/new">Registra un usuario</a>
+		<a class="btn btn-success my-4"href="/licenses/new">Agrega una licencia</a>
 		
-		<table class="table table-dark table-hover">
+		<table class="table table-striped table-success "  class="rounded">
 			<thead>
 				<tr>
-					<th class="bg-dark">Nombre</th>
-					<th class="bg-dark">Num de Licencia</th>
-					<th class="bg-dark">Fecha de expiracion</th>
+					<th class="bg-success">Nombre</th>
+					<th class="bg-success">Num de Licencia</th>
+					<th class="bg-success">Fecha de expiracion</th>
 				</tr>
 			</thead>
 			<tbody>
 				<c:forEach items="${infoUsuario}" var="persona">
 					<tr>
-						<td class="bg-dark">${persona.firstName} ${persona.lastName}</td>
-						<td class="bg-danger">${persona.getLicencia().getNumberComoString()}</td>
-						<td class="bg-danger">${persona.getLicencia().getExpirationDateFormat()}</td>
+						<td > <a href="/persons/${persona.id}"> ${persona.firstName} ${persona.lastName}</a></td>
+						<td >${persona.getLicencia().getNumberComoString()}</td>
+						<td>${persona.getLicencia().getExpirationDateFormat()}</td>
 					</tr>
 				</c:forEach>
 			
