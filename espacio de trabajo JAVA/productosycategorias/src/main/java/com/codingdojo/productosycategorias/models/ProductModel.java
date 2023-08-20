@@ -3,7 +3,6 @@ package com.codingdojo.productosycategorias.models;
 import java.util.Date;
 import java.util.List;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -16,6 +15,8 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Min;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name="productos")
@@ -24,15 +25,18 @@ public class ProductModel {
 	 @Id
 	    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	    private Long id;
+	 	@NotBlank(message="Ingrese el nombre del producto")
 	    private String name;
+	 	@NotBlank(message="Ingrese una descripcion sobre el producto")
 	    private String description;
+	 	@Min( value= 3, message="Ingrese el precio del producto")
 	    private double price;
 	    @Column(updatable=false)
 	    private Date createdAt;
 	    private Date updatedAt;
 	    @ManyToMany(fetch = FetchType.LAZY)
 	    @JoinTable(
-	        name = "categories_products", 
+	        name = "productos_y_categorias", 
 	        joinColumns = @JoinColumn(name = "product_id"), 
 	        inverseJoinColumns = @JoinColumn(name = "category_id")
 	    )

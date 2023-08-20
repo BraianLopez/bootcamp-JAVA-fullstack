@@ -3,7 +3,6 @@ package com.codingdojo.productosycategorias.models;
 import java.util.Date;
 import java.util.List;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
@@ -16,6 +15,7 @@ import jakarta.persistence.ManyToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "categorias")
@@ -24,12 +24,15 @@ public class CategoryModel {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	@NotBlank(message = "Ingrese una categoria")
 	private String name;
 	@Column(updatable = false)
 	private Date createdAt;
 	private Date updatedAt;
 	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "categories_products", joinColumns = @JoinColumn(name = "category_id"), inverseJoinColumns = @JoinColumn(name = "product_id"))
+	@JoinTable(name = "productos_y_categorias",
+	joinColumns = @JoinColumn(name = "category_id"),
+	inverseJoinColumns = @JoinColumn(name = "product_id"))
 	private List<ProductModel> products;
 
 	public CategoryModel() {
@@ -75,7 +78,7 @@ public class CategoryModel {
 	public void setProducts(List<ProductModel> products) {
 		this.products = products;
 	}
-	
+
 	@PrePersist
 	protected void createdAt() {
 		this.createdAt = new Date();
@@ -85,6 +88,5 @@ public class CategoryModel {
 	protected void updatedAt() {
 		this.updatedAt = new Date();
 	}
-	
 
 }

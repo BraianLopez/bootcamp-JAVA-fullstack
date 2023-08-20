@@ -1,7 +1,0 @@
-package com.codingdojo.bookapi1.repositories;
-
-import org.springframework.data.repository.CrudRepository;
-
-public interface LicenciasRepo extends CrudRepository<Licencias, Long>{
-
-}

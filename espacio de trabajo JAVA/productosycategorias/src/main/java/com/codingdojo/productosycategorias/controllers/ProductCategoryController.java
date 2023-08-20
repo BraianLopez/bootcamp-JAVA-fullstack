@@ -12,27 +12,25 @@ import com.codingdojo.productosycategorias.services.MainService;
 
 @Controller
 public class ProductCategoryController {
-	
-	//INYECTAR DEPENDECIAS
+
+	// INYECTAR DEPENDECIAS
 	private final MainService mainServ;
+
 	public ProductCategoryController(MainService mainS) {
 		this.mainServ = mainS;
 	}
-	
 
 	@PostMapping("/aso/{idProducto}")
 	public String asociarProductoCategoria(@PathVariable("idProducto") Long idProducto,
-			@ModelAttribute("asociacion") ProductCategoryModel productosCategorias,
-			Model viewModel, BindingResult resultado) {
-		
-		if(resultado.hasErrors()) {
-			return "showproduct.jsp";
+			@ModelAttribute("asociacion") ProductCategoryModel productosCategorias, BindingResult resultado,
+			Model viewModel) {
+
+		if (resultado.hasErrors()) {
+			return "mostrarproducto.jsp";
 		}
 		mainServ.crearVinculo(productosCategorias);
 		return "redirect:/product/"+idProducto;
-		
+
 	}
-	
-	
-	
+
 }

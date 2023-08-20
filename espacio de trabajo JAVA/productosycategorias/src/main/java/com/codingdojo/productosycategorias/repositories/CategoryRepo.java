@@ -8,6 +8,7 @@ import com.codingdojo.productosycategorias.models.CategoryModel;
 import com.codingdojo.productosycategorias.models.ProductModel;
 
 public interface CategoryRepo extends CrudRepository<CategoryModel, Long>{
-
+	
+	List<CategoryModel>findAll();
 	List<CategoryModel> findByProductsNotContains(ProductModel producto);
 }

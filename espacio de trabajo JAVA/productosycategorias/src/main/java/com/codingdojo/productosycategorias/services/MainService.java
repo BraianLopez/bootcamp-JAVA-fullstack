@@ -25,7 +25,7 @@ public class MainService {
 		}
 		
 		
-		//metodos para crear
+		//METODOS PARA CREAR
 		public ProductModel crearProducto(ProductModel producto) {
 			return productRepo.save(producto);
 		}
@@ -40,9 +40,16 @@ public class MainService {
 		public List<CategoryModel> productoSinCategoria(ProductModel producto){
 			return categoryRepo.findByProductsNotContains(producto);
 		}
-		
 		public ProductModel unProducto(Long id) {
 			return productRepo.findById(id).orElse(null);
 		}
-	
+		public List<ProductModel> todosProductos() {
+			return productRepo.findAll();
+		}
+		public List<ProductModel> categoriaSinProducto(CategoryModel categoria){
+			return productRepo.findByCategoriesNotContains(categoria);
+		}
+		public CategoryModel unaCategoria(Long id) {
+			return categoryRepo.findById(id).orElse(null);
+		}
 }
