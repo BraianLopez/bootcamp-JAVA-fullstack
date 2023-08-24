@@ -1,5 +1,0 @@
-package com.codingdojo.licencias.repositories;
-
-public interface PersonaRepo {
-
-}

@@ -1,37 +1,41 @@
 INDEX VERSION 1.131
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2396746287.index
-\dojosyninjas\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444747155.index
-\elcodigo\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1876417161.index
-\dojosyninjas\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1980575085.index
-\mostrarfecha\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1669744850.index
-\listaestudiantes\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3171001149.index
-\cadenas\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\173210288.index
-\licencias\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\487483685.index
-\ideas\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3040705839.index
-\lenguajes\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\143106046.index
-\usoplantillas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3478700949.index
+\eventos\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1081590509.index
+\ninjagold\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3259986486.index
 \buggylookifycode\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1860149789.index
-\bookapi\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1997508160.index
+\productosycategorias\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\143106046.index
+\usoplantillas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1519532874.index
 \contador\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3479578358.index
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3040705839.index
+\lenguajes\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\487483685.index
+\ideas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\173210288.index
+\licencias\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1860149789.index
 \bookapi\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2174181638.index
 \bookapi1\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1997508160.index
-\productosycategorias\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2777078436.index
+\autenticacion\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2396746287.index
+\dojosyninjas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1669744850.index
+\listaestudiantes\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444747155.index
+\elcodigo\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3479578358.index
+\bookapi\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3171001149.index
+\cadenas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1980575085.index
+\mostrarfecha\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\159572357.index
 \licences\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1081590509.index
-\ninjagold\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1876417161.index
+\dojosyninjas\src\main\java
