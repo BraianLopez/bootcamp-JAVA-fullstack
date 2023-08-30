@@ -5,6 +5,7 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 
 import com.codingdojo.eventos.models.Eventos;
+import com.codingdojo.eventos.models.User;
 import com.codingdojo.eventos.repositories.EventoRepo;
 
 @Service
@@ -36,5 +37,14 @@ public class EventoService {
 		}
 		public void eliminarEvento(Long id) {
 		 eventoRepo.deleteById(id);
+		}
+		public void unirseCancelarEvento(Eventos evento, User usuario, boolean asistencia) {
+		//COMO ASISTENCIA ES DE TIPO BOOLEAN, POR DEFECTO ES TRUE. 
+			if(asistencia) {
+			evento.getAsistentes().add(usuario);
+		}else {
+			evento.getAsistentes().remove(usuario);
+		}
+		eventoRepo.save(evento);
 		}
 }

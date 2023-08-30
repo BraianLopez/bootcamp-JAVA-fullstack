@@ -62,16 +62,23 @@
 								<c:when test="${eventoEnProv.organizador.id == usuario.id }">
 									<a href="/events/${eventoEnProv.id }/edit">Editar</a> |
 									
-					<form:form action="/events/${eventoEnProv.id}/delete"
-										method="post"> 
+					<form:form action="/events/${eventoEnProv.id}/delete" method="post">
 										<input type="hidden" name="_method" value="delete" />
-										<button >Eliminar</button>
-									</form:form> 
-								
-								</c:when>
+										<button>eliminar</button>
+									</form:form>
+
+								</c:when> 		
 								<c:otherwise>
-									<a>Unirse </a> |
-					<a>Cancelar</a>
+								<c:choose>
+									<c:when test="${eventoEnProv.asistentes.contains(usuario)}">
+										<a href="/events/${eventoEnProv.id }/${usuario.id }/cancelar">Cancelar
+										</a> |
+								</c:when>
+									<c:otherwise>
+										<a href="/events/${eventoEnProv.id }/${usuario.id }/unirse">Unirse
+										</a>
+									</c:otherwise>
+									</c:choose>
 								</c:otherwise>
 							</c:choose></td>
 					</tr>
@@ -108,16 +115,23 @@
 						<td><c:choose>
 								<c:when test="${eventoNoProv.organizador.id == usuario.id }">
 									<a href="/events/${eventoNoProv.id }/edit">Editar</a> |
-<%-- 					<form:form action="/events/${eventoNoProv.id }/delete" --%>
-<%-- 										method="post"> --%>
-<!-- 										<input type="hidden" name="_method" value="delete" /> -->
-<%-- 										<form:input path="" type="hidden" /> --%>
-<!-- 										<button class="btn btn-danger">Eliminar</button> -->
-<%-- 									</form:form> --%>
+									<form:form action="/events/${eventoNoProv.id}/delete"
+										method="post">
+										<input type="hidden" name="_method" value="delete" />
+										<button>eliminar</button>
+									</form:form>
 								</c:when>
 								<c:otherwise>
-									<a>Unirse </a> |
-					<a>Cancelar</a>
+								<c:choose>
+									<c:when test="${eventoNoProv.asistentes.contains(usuario) }">
+										<a href="/events/${eventoNoProv.id }/${usuario.id }/cancelar">Cancelar
+										</a> 
+								</c:when>
+									<c:otherwise>
+										<a href="/events/${eventoNoProv.id }/${usuario.id }/unirse">Unirse
+										</a>
+									</c:otherwise>
+								</c:choose>
 								</c:otherwise>
 							</c:choose></td>
 					</tr>

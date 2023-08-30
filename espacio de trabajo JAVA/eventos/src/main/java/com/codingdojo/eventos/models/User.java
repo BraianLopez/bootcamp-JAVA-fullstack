@@ -1,12 +1,18 @@
 package com.codingdojo.eventos.models;
 
 import java.util.Date;
+import java.util.List;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
 import jakarta.persistence.Table;
@@ -49,13 +55,28 @@ public class User {
 	public User() {
 		
 	}
-
+	
+	//RELACION 1:n CON EVENTOS
+	@OneToMany(mappedBy="organizador", fetch=FetchType.LAZY)
+	private List<Eventos> EventosOrganizados;
+	
+	//RELACION MUCHOS A MUCHOS CON EVENTOS
+	@ManyToMany(fetch=FetchType.LAZY)
+	@JoinTable(name="asistentes",
+	joinColumns=@JoinColumn(name="user_id"),
+	inverseJoinColumns=@JoinColumn(name="evento_id"))
+	private List<Eventos> eventoAsistir;
+	
+	
+	
+	
+	
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();
 	}
 
-	@PreUpdate
+	@PreUpdate	
 	protected void onUpdate() {
 		this.updatedAt = new Date();
 	}
@@ -139,6 +160,22 @@ public class User {
 
 	public void setProvincia(String provincia) {
 		this.provincia = provincia;
+	}
+
+	public List<Eventos> getEventosOrganizados() {
+		return EventosOrganizados;
+	}
+
+	public void setEventosOrganizados(List<Eventos> eventosOrganizados) {
+		EventosOrganizados = eventosOrganizados;
+	}
+
+	public List<Eventos> getEventoAsistir() {
+		return eventoAsistir;
+	}
+
+	public void setEventoAsistir(List<Eventos> eventoAsistir) {
+		this.eventoAsistir = eventoAsistir;
 	}
 	
 }

@@ -90,9 +90,10 @@ public class IdeasController {
 
 		return "edit.jsp";
 	}
+
 	@PutMapping("/ideas/{id}/edit")
-	public String editandoIdea(@Valid  @ModelAttribute("ideas") IdeasModel ideas,
-			BindingResult resultado,@PathVariable("id") Long idIdea, HttpSession sesion, Model viewModel) {
+	public String editandoIdea(@Valid @ModelAttribute("ideas") IdeasModel ideas, BindingResult resultado,
+			@PathVariable("id") Long idIdea, HttpSession sesion, Model viewModel) {
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
 			return "redirect:/";
@@ -100,12 +101,11 @@ public class IdeasController {
 		UserModel usuario = userServ.encontrarUserPorId(userId);
 		if (resultado.hasErrors()) {
 			viewModel.addAttribute("usuario", usuario);
-
 			return "edit.jsp";
 		}
-		IdeasModel unaIdea = ideasService.encontrarIdeaPorId(idIdea);
-		unaIdea.setIdea(unaIdea.getIdea());
-		ideasService.actualizarIdea(unaIdea);
+//		IdeasModel unaIdea = ideasService.encontrarIdeaPorId(idIdea);
+//		unaIdea.setIdea(unaIdea.getIdea());
+		ideasService.actualizarIdea(ideas);
 		return "redirect:/ideas";
 	}
 }

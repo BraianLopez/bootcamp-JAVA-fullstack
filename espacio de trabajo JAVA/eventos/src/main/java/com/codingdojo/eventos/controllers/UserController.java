@@ -38,7 +38,7 @@ public class UserController {
 	@PostMapping("/registration")
 	public String registro(@Valid @ModelAttribute("user") User usuario, BindingResult resultado, Model viewModel) {
 		if (resultado.hasErrors()) {
-			// viewModel.addAttribute("user", usuario);
+			// viewModel.addAttribute("user", new user); NO SE ENVIA UNA INSTANCIA VACIA DE USER PORQUE SE PIERDE LA REFERENCIA A LOS ERRORES
 			viewModel.addAttribute("login", new LogReg());
 			viewModel.addAttribute("provincias", Provincias.provincias);
 			return "/loginreg.jsp";
@@ -48,8 +48,7 @@ public class UserController {
 			viewModel.addAttribute("registro", "gracias por registrarte, ahora inicia sesion");
 		}
 		// sobreescribian info
-		// viewModel.addAttribute("user", new User());
-		// viewModel.addAttribute("login", new LogReg());
+		 viewModel.addAttribute("login", new LogReg());
 		return "loginreg.jsp";
 	}
 

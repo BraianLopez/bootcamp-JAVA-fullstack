@@ -27,7 +27,7 @@
 		<form:form action="/ideas/${idIdea}/edit" method="POST"
 			modelAttribute="ideas">
 			<input type="hidden" name="_method" value="put" />
-			<form:input type="hidden" path="creador" value="${user.id}" />
+			<form:input type="hidden" path="creador" value="${usuario.id}" />
 
 			<div class="form-group">
 				<form:label class="form-label" path="idea">Content:  </form:label>
@@ -36,6 +36,8 @@
 			</div>
 			<input type="submit" value="Editar" />
 		</form:form>
+		<a href="/songs/${idea.id }/delete">Eliminar</a>
+		<a href="/ideas" class="m-3">cancelar</a>
 	</div>
 </body>
 </html>

@@ -36,6 +36,7 @@
 			<div class="col">
 				<a class="flex" href="/logout"> Cerrar sesion</a>
 			</div>
+			
 		</div>
 		<h1>Todas las canciones</h1>
 

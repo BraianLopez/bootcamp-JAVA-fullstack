@@ -35,13 +35,14 @@
 
 		<hr>
 		<h3>Ideas:</h3>
+		
 		<table class="table table-hover table-bordered rounded border-dark">
 			<thead class="bg-success">
 				<tr>
 					<th>Idea</th>
 					<th>creada por</th>
-<!-- 					<th>like</th> -->
-<!-- 					<th>accion</th> -->
+					<th>like</th>
+					<th>accion</th>
 				</tr>
 			</thead>
 			<tbody>

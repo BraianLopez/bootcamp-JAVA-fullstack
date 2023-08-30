@@ -1,6 +1,7 @@
 package com.codingdojo.eventos.models;
 
 import java.util.Date;
+import java.util.List;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
@@ -11,6 +12,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
@@ -41,10 +44,18 @@ public class Eventos {
 	private Date createdAt;
 	private Date updatedAt;
 
-	// Relacion 1:n a usuarios
+	// RELACION n:1 A USUARIOS
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "user_id")
 	private User organizador;
+	
+	//RELACION MUCHOS A MUCHOS CON USUARIOS
+		@ManyToMany(fetch=FetchType.LAZY)
+		@JoinTable(name="asistentes",
+		joinColumns=@JoinColumn(name="evento_id"),
+		inverseJoinColumns=@JoinColumn(name="user_id"))
+		private List<User> asistentes;
+
 
 	// CONSTRUCTOR
 	public Eventos() {
@@ -86,7 +97,15 @@ public class Eventos {
 	public String getProvincia() {
 		return provincia;
 	}
-
+	
+	public List<User> getAsistentes() {
+		return asistentes;
+	}
+	
+	public void setAsistentes(List<User> asistentes) {
+		this.asistentes = asistentes;
+	}
+	
 	public void setProvincia(String provincia) {
 		this.provincia = provincia;
 	}

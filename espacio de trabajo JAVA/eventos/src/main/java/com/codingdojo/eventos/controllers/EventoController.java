@@ -1,7 +1,5 @@
 package com.codingdojo.eventos.controllers;
 
-
-
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -36,25 +34,28 @@ public class EventoController {
 	@PostMapping("/nuevo/evento")
 	public String crearEvento(@Valid @ModelAttribute("evento") Eventos evento, BindingResult resultado,
 			HttpSession sesion, Model viewModel) {
-		//VALIDAR SI LA SESION ESTA ACTIVA
+		// VALIDAR SI LA SESION ESTA ACTIVA
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
 			return "redirect:/";
 		}
-		
+
 		if (resultado.hasErrors()) {
 			User usuario = userServ.encontrarPorId(userId);
 			viewModel.addAttribute("usuario", usuario);
 			viewModel.addAttribute("provincias", Provincias.provincias);
+			viewModel.addAttribute("eventosProvinciaUser", eventoService.eventoProvinciaUsuario(usuario.getProvincia()));
+			viewModel.addAttribute("eventosNoProvinciaUser", eventoService.eventoNoProvinciaUsuario(usuario.getProvincia()));
 			return "/dashboard.jsp";
 		}
 		eventoService.crearEvento(evento);
 		return "redirect:/events";
 	}
-	//EDITAR EVENTO
+
+	// EDITAR EVENTO
 	@GetMapping("/events/{idEvento}/edit")
 	public String formEditarEvento(@PathVariable("idEvento") Long idEvento, @ModelAttribute("evento") Eventos evento,
-			 HttpSession sesion, Model viewModel) {
+			HttpSession sesion, Model viewModel) {
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
 			return "redirect:/";
@@ -72,9 +73,9 @@ public class EventoController {
 	}
 
 	@PutMapping("/events/{id}/edit")
-	public String editarEvento(@Valid @PathVariable("id") Long idEvento, @ModelAttribute("evento") Eventos evento,
-			BindingResult resultado, HttpSession sesion, Model viewModel) {
-		//VALIDAR SI LA SESION ESTA ACTIVA
+	public String editarEvento(@Valid @ModelAttribute("evento") Eventos evento, BindingResult resultado,
+			@PathVariable("id") Long idEvento, HttpSession sesion, Model viewModel) {
+		// VALIDAR SI LA SESION ESTA ACTIVA
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
 			return "redirect:/";
@@ -88,10 +89,27 @@ public class EventoController {
 		eventoService.actualizarEvento(evento);
 		return "redirect:/events";
 	}
-	
+
 	@DeleteMapping("/events/{id}/delete")
 	public String eliminarEvento(@PathVariable("id") Long idEvento) {
 		eventoService.eliminarEvento(idEvento);
 		return "redirect:/events";
+	}
+
+	// UNIRSE-CANCELAR ASISTENCIA
+	@GetMapping("/events/{idEvento}/{idUsuario}/{opcion}")
+	public String asistirCancelarEvento(@PathVariable("idEvento") Long idEvento,
+			@PathVariable("idUsuario") Long idUsuario,
+			@PathVariable("opcion") String opcion, HttpSession sesion) {
+		//VALIDAR SI LA SESION ESTA ACTIVA
+				Long userId = (Long) sesion.getAttribute("userID");
+				if (userId == null) {
+					return "redirect:/";
+				}
+				Eventos unEvento = eventoService.unEvento(idEvento); 	
+				boolean unirseCancelar =(opcion.equals("unirse"));
+				User usuario = userServ.encontrarPorId(userId);
+				eventoService.unirseCancelarEvento(unEvento, usuario, unirseCancelar);
+				return"redirect:/events";
 	}
 }
