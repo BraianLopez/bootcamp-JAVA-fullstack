@@ -54,7 +54,11 @@
 				</div>
 				<div class="form-group">
 					<form:label class="form-label" path="provincia">Provincia: </form:label>
-					<form:input type="select" class="form-control" path="provincia" />
+					<form:select path="provincia" type="text" class="form-select">
+					<c:forEach items="${provincias }" var="provincia">
+					<form:option value="${provincia }"></form:option>
+					</c:forEach>
+					</form:select>
 
 				</div>
 				<div class="form-group">

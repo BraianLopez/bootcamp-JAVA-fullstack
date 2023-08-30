@@ -38,6 +38,7 @@ public class DojoModel {
 	    protected void onUpdate(){			//ASIGNA EL ESPACIO DE TIEMPO EXACTO
 	        this.updatedAt = new Date();	//EN EL QUE SE ACTUALIZA UN LIBRO
 	    }
+	    //CONSTRUCTOR
 	    public DojoModel() {
 	        
 	    }

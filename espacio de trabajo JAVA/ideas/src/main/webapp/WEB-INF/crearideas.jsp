@@ -20,15 +20,13 @@
 <link rel="stylesheet" href="/css/main.css">
 <script type="text/javascript" src="/js/app.js"></script>
 
-</head>
 <body>
 
 
 <div class="col-6">
-	<form:form action="/nuevo/idea" method="POST" modelAttribute="idea">
-<%-- 			<form:form method="POST" action="/nuevo/idea" --%>
-<%-- 				modelAttribute="idea"> --%>
-				<form:input type="hidden" path="creador" value="${usuario.id}" />
+	<form:form action="/nuevo/idea" method="POST" modelAttribute="ideas">
+
+				<form:input type="hidden" path="creador" value="${user.id}" />
 				
 				<div class="form-group">
 				<form:label class="form-label" path="idea">Content:  </form:label>
@@ -37,7 +35,7 @@
 			</div>
 				
 				
-				<input type="submit" value="Create Idea!" />
+				<input type="submit" value="Crear Idea!" />
 			</form:form>
 		</div>
 

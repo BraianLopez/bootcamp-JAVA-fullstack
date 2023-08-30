@@ -1,5 +1,7 @@
 package com.leon.ideas.controllers;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -10,6 +12,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.leon.ideas.models.IdeasModel;
 import com.leon.ideas.models.LogReg;
 import com.leon.ideas.models.UserModel;
+import com.leon.ideas.services.IdeasService;
 import com.leon.ideas.services.UserService;
 
 import jakarta.servlet.http.HttpSession;
@@ -20,11 +23,12 @@ public class UserController {
 
 	// INYECCION DE DEPENDENCIAS
 	private final UserService userServ;
+	private final IdeasService ideasService;
 	//private final IdeasService eventService;
 
-	public UserController(UserService uSer ) { //,IdeasService iServ
+	public UserController(UserService uSer, IdeasService iServ ) { //,IdeasService iServ
 		this.userServ = uSer;
-		//this.ideasService = iServ;
+		this.ideasService = iServ;
 	}
 
 	@GetMapping("/")
@@ -82,13 +86,13 @@ public class UserController {
 		}
 		UserModel usuario = userServ.encontrarUserPorId(userId);
 		viewModel.addAttribute("usuario", usuario);
+		
+		List<IdeasModel> ideasAll = ideasService.ideaUsuario();
+		viewModel.addAttribute("listaIdeas", ideasAll);
 		return "dashboard.jsp";
 		
 	}
 	
-	@GetMapping("/logout")
-	public String logout(HttpSession sesion) {
-		sesion.setAttribute("userID", null);
-		return "redirect:/";
-	}
+	
+	
 }

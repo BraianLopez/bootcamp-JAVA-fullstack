@@ -38,7 +38,8 @@ public class LenguajesController {
 		viewModel.addAttribute("languages", todosLenguajes);
 		return "languages.jsp";
 	}
-	//CREANDO UN LENGUAJE NUEVO
+
+	// CREANDO UN LENGUAJE NUEVO
 	@PostMapping("/languages")
 	public String create(@Valid @ModelAttribute("language") Lenguajes language, BindingResult result, Model model) {
 		if (result.hasErrors()) {
@@ -49,40 +50,40 @@ public class LenguajesController {
 		lenguajesService.crearLenguajes(language);
 		return "redirect:/";
 	}
-	  //INFORMACION DE UN LENGUAJE EN ESPECÍFICO
-    @GetMapping("/languages/{id}")
-    public String show(@PathVariable("id") Long id, Model model) {
-    	Lenguajes language = lenguajesService.findLanguage(id);
 
-        if (language != null) {
-            model.addAttribute("language", language);
-            return "show.jsp";
-        } 
-            return "redirect:/";
-    }
-    //EDITAR INFORMACION DE UN LENGUAJE
-    @GetMapping("/languages/{id}/edit")
-    public String edit(@PathVariable("id") Long id, Model model) {
-    		Lenguajes language = lenguajesService.findLanguage(id);
-    	        model.addAttribute("language", language);
-    	        return "/edit.jsp";
-    	    }
-    	    
-    	    @PutMapping("/languages/{id}")
-    	    public String update(@Valid @ModelAttribute("language") Lenguajes language, BindingResult result) {
-    	        if (result.hasErrors()) {
-    	            return "/edit.jsp";
-    	        } 
-    	        	lenguajesService.actualizarLenguaje(language);
-    	            return "redirect:/";
-    	        }
-    	    
-    
-    
-    //ELIMINA UN LENGUAJE 
-    @DeleteMapping("/languages/{id}")
-    public String destroy(@PathVariable("id") Long id) {
-    	lenguajesService.eliminarLenguaje(id);
-        return "redirect:/";
-    }
+	// INFORMACION DE UN LENGUAJE EN ESPECÍFICO
+	@GetMapping("/languages/{id}")
+	public String show(@PathVariable("id") Long id, Model model) {
+		Lenguajes language = lenguajesService.findLanguage(id);
+
+		if (language != null) {
+			model.addAttribute("language", language);
+			return "show.jsp";
+		}
+		return "redirect:/";
+	}
+
+	// EDITAR INFORMACION DE UN LENGUAJE
+	@GetMapping("/languages/{id}/edit")
+	public String edit(@PathVariable("id") Long id, Model model) {
+		Lenguajes language = lenguajesService.findLanguage(id);
+		model.addAttribute("language", language);
+		return "/edit.jsp";
+	}
+
+	@PutMapping("/languages/{id}")
+	public String update(@Valid @ModelAttribute("language") Lenguajes language, BindingResult result) {
+		if (result.hasErrors()) {
+			return "/edit.jsp";
+		}
+		lenguajesService.actualizarLenguaje(language);
+		return "redirect:/";
+	}
+
+	// ELIMINA UN LENGUAJE
+	@DeleteMapping("/languages/{id}")
+	public String destroy(@PathVariable("id") Long id) {
+		lenguajesService.eliminarLenguaje(id);
+		return "redirect:/";
+	}
 }

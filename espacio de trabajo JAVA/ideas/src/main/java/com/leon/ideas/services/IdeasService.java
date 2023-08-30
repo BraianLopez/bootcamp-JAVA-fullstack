@@ -1,6 +1,7 @@
 package com.leon.ideas.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 import com.leon.ideas.models.IdeasModel;
@@ -11,18 +12,26 @@ import com.leon.ideas.repositories.IdeasRepo;
 public class IdeasService {
 	//INYECCION DE DEPENDENCIAS
 	private final IdeasRepo ideasRepo;
-	public IdeasService(IdeasRepo iRe) { //, MensajeRepo mRe
+	public IdeasService(IdeasRepo iRe) {
 		this.ideasRepo = iRe; 
-		//this.mensajeRepo = mRe;
+		
 	}
 
 	// Crear Idea
 		public IdeasModel crearIdea(IdeasModel idea) {
 			return ideasRepo.save(idea);
 		}
+		//mostrar idea
+		public IdeasModel encontrarIdeaPorId(Long id) {
+			Optional<IdeasModel> idea = ideasRepo.findById(id);
+			if (idea.isPresent()) {
+				return idea.get();
+			}
+			return null;
+		}
 
 		// Editar Idea
-		public IdeasModel actualizarEvento(IdeasModel idea) {
+		public IdeasModel actualizarIdea(IdeasModel idea) {
 			return ideasRepo.save(idea); 
 		}
 
@@ -31,8 +40,10 @@ public class IdeasService {
 			ideasRepo.deleteById(id);
 		}
 		
-		//Mostrar idea
-		public List<IdeasModel> ideaUsuario(String idea){
+		//Mostrar ideaS
+		public List<IdeasModel> ideaUsuario(){
 			return ideasRepo.findAll(); 
 		}
+
+		
 }

@@ -40,50 +40,26 @@
 				<tr>
 					<th>Idea</th>
 					<th>creada por</th>
-					<th>like</th>
-					<th>accion</th>
+<!-- 					<th>like</th> -->
+<!-- 					<th>accion</th> -->
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach items="${ideasUsuario }" var="idea">
+				<c:forEach items="${listaIdeas }" var="ideas">
 					<tr>
-						<td><a href=" /events/${idea.id}"> <c:out
-									value="${idea.idea }"></c:out></a></td>
+						<td><a href="/ideas/${ideas.id}"> <c:out
+									value="${ideas.idea }"></c:out></a></td>
 
 						
-						<td><c:out value="${ideasUser.creadorador.nombre }"></c:out></td>
+						<td><c:out value="${ideas.creador.nombre }"></c:out></td>
 
 
-						<td><c:choose>
-								<c:when test="${ideaUser.creadorador.id == usuario.id }">
-									<a href="/events/${ideaUser.id}/edit"> Edit </a> |
-									<form:form action="/events/${eventoUser.id}/delete"
-										method="post">
-										<input type="hidden" name="_method" value="delete" />
-										<button class="btn btn-danger">Eliminar</button>
-									</form:form>
-
-								</c:when>
-								<c:otherwise>
-									<c:choose>
-										<c:when test="${ eventoUser.asistentes.contains(usuario)}">
-											<a href="/event/${eventoUser.id}/${usuario.id}/cancelar">
-												Cancelar </a>
-										</c:when>
-										<c:otherwise>
-											<a href="/event/${eventoUser.id}/${usuario.id}/unirse">
-												Unirse </a>
-										</c:otherwise>
-									</c:choose>
-								</c:otherwise>
-
-							</c:choose></td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
 	
 	<a href="/nuevo/idea">crear idea</a>
-	
+	</div>
 </body>
 </html>

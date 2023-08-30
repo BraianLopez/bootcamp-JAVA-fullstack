@@ -25,6 +25,8 @@ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metada
 \autenticacion\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2396746287.index
 \dojosyninjas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1145389673.index
+\laboratoriodecanciones\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1669744850.index
 \listaestudiantes\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444747155.index
