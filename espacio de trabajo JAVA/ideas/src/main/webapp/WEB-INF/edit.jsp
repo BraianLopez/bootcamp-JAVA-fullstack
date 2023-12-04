@@ -22,7 +22,8 @@
 
 </head>
 <body>
-	<div class="col-6">
+	<div class=" container mx-auto col-4">
+	<br>
 	<h2> <c:out value="${idea.idea }"></c:out></h2>
 		<form:form action="/ideas/${idIdea}/edit" method="POST"
 			modelAttribute="ideas">
@@ -30,13 +31,13 @@
 			<form:input type="hidden" path="creador" value="${usuario.id}" />
 
 			<div class="form-group">
-				<form:label class="form-label" path="idea">Content:  </form:label>
+				<form:label class="form-label" path="idea">Editar idea:  </form:label>
 				<form:errors class="text-danger" path="idea" />
 				<form:input type="text" class="form-control" path="idea" value="${idea.idea}" />
 			</div>
 			<input type="submit" value="Editar" />
 		</form:form>
-		<a href="/songs/${idea.id }/delete">Eliminar</a>
+		<a href="/ideas/${idea.id }/delete">Eliminar</a>
 		<a href="/ideas" class="m-3">cancelar</a>
 	</div>
 </body>

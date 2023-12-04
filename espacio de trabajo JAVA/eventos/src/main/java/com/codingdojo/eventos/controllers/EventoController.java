@@ -16,6 +16,7 @@ import com.codingdojo.eventos.models.User;
 import com.codingdojo.eventos.services.EventoService;
 import com.codingdojo.eventos.services.UserServices;
 
+
 import jakarta.servlet.http.HttpSession;
 import jakarta.validation.Valid;
 
@@ -46,10 +47,30 @@ public class EventoController {
 			viewModel.addAttribute("provincias", Provincias.provincias);
 			viewModel.addAttribute("eventosProvinciaUser", eventoService.eventoProvinciaUsuario(usuario.getProvincia()));
 			viewModel.addAttribute("eventosNoProvinciaUser", eventoService.eventoNoProvinciaUsuario(usuario.getProvincia()));
-			return "/dashboard.jsp";
+			return "dashboard.jsp";
 		}
 		eventoService.crearEvento(evento);
 		return "redirect:/events";
+	}
+	
+	//MOSTRAR INFO DE UN EVENTO ESPECIFICO
+	@GetMapping("/events/{id}")
+	public String mostrarEvento(@ModelAttribute("eventos") Eventos evento, BindingResult resultado,
+			HttpSession sesion,Model viewModel) {
+		Long userId = (Long) sesion.getAttribute("userID");
+		if (userId == null) {
+			return "redirect:/";
+		}
+		User usuario = userServ.encontrarPorId(userId);
+		viewModel.addAttribute("usuario", usuario);
+
+		Eventos unEvento = eventoService.unEvento(evento.getId());
+		if(unEvento==null) {
+			
+			return"dashboard.jsp";
+		}
+		viewModel.addAttribute("evento", unEvento);
+		return "show.jsp";
 	}
 
 	// EDITAR EVENTO

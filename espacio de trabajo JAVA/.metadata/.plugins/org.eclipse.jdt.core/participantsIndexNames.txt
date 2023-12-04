@@ -3,6 +3,8 @@ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metada
 \eventos\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1081590509.index
 \ninjagold\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\463869406.index
+\cursosplataforma\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3259986486.index
 \buggylookifycode\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1997508160.index
@@ -13,12 +15,18 @@ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metada
 \contador\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3040705839.index
 \lenguajes\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2825437468.index
+\waterbnb\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\487483685.index
 \ideas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\173210288.index
 \licencias\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1860149789.index
 \bookapi\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1669466324.index
+\examenblackbelt\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2656650927.index
+\waterbnb\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2174181638.index
 \bookapi1\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2777078436.index
@@ -27,16 +35,18 @@ C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metada
 \dojosyninjas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1145389673.index
 \laboratoriodecanciones\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\781604537.index
+\programastelevision\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1669744850.index
 \listaestudiantes\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3444747155.index
 \elcodigo\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3479578358.index
-\bookapi\src\main\java
-C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3171001149.index
-\cadenas\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1980575085.index
 \mostrarfecha\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3171001149.index
+\cadenas\src\main\java
+C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3479578358.index
+\bookapi\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\159572357.index
 \licences\src\main\java
 C:\Users\familia\Desktop\bootcamp-JAVA-fullstack\espacio de trabajo JAVA\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1876417161.index

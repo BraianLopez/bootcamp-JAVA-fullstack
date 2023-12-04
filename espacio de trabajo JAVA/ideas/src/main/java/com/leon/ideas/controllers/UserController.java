@@ -92,7 +92,11 @@ public class UserController {
 		return "dashboard.jsp";
 		
 	}
-	
+	@GetMapping("/logout")
+	public String cerrarSesion(HttpSession sesion) {
+		sesion.setAttribute("userID", null);
+		return "redirect:/";
+	}
 	
 	
 }

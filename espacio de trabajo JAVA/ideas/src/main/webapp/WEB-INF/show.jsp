@@ -23,12 +23,43 @@
 
 </head>
 <body>
-	<div class="container mx-auto	">
+	<div class="container mx-auto justify-content-between">
 		<h1>
+		<br>
 			<c:out value="${unaIdea.idea }"></c:out>
 		</h1>
 		<h3>Creado por: <c:out value="${unaIdea.creador.nombre}"></c:out> </h3>
-		<a href="/ideas/${unaIdea.id}/edit">Editar</a>
+		<h3>Personas que dieron like:  </h3>
+		<div class="col-4	">
+		<table class="table table-hover table-bordered rounded border-dark">
+			<thead class="bg-success">
+				<tr>
+					<th>Nombre</th>
+				</tr>
+			</thead>
+			<tbody>
+			<c:forEach items="${unaIdea.likes }" var="likes">
+			
+			<tr>
+						<td><c:out value="${likes.nombre} "></c:out></td>
+			</tr>
+			</c:forEach>
+			</tbody>
+			</table>
+		</div>
+			<c:choose>
+			<c:when test="${unaIdea.creador.id == usuario.id}">
+				<div class="row mt-4">
+
+						<a href="/ideas/${unaIdea.id}/edit">Edit Idea</a>
+				</div>
+			</c:when>
+			<c:otherwise>
+
+			</c:otherwise>
+		</c:choose>
+
+
 	</div>
 </body>
 </html>

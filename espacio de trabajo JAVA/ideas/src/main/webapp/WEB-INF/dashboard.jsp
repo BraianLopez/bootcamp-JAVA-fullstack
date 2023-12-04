@@ -34,8 +34,14 @@
 		</div>
 
 		<hr>
-		<h3>Ideas:</h3>
-		
+		<div class="row">
+			<h3>Ideas:</h3>
+			<div class="text-end">
+				<a href="/ideas/low">Low Likes</a> <a href="/ideas/high">High
+					Likes</a>
+			</div>
+		</div>
+
 		<table class="table table-hover table-bordered rounded border-dark">
 			<thead class="bg-success">
 				<tr>
@@ -51,16 +57,24 @@
 						<td><a href="/ideas/${ideas.id}"> <c:out
 									value="${ideas.idea }"></c:out></a></td>
 
-						
+
 						<td><c:out value="${ideas.creador.nombre }"></c:out></td>
-
-
+						<td><c:out value="${ideas.likes.size() }"></c:out></td>
+						<td><c:choose>
+								<c:when test="${ideas.likes.contains(usuario)}">
+									<a href="/ideas/${ideas.id }/${usuario.id }/dislike">dislike
+									</a>
+								</c:when>
+								<c:otherwise>
+									<a href="/ideas/${ideas.id }/${usuario.id }/like">like </a>
+								</c:otherwise>
+							</c:choose></td>
 					</tr>
 				</c:forEach>
 			</tbody>
 		</table>
-	
-	<a href="/nuevo/idea">crear idea</a>
+
+		<a href="/nuevo/idea">crear idea</a>
 	</div>
 </body>
 </html>

@@ -4,7 +4,9 @@ import java.util.List;
 import java.util.Optional;
 
 import org.springframework.stereotype.Service;
+
 import com.leon.ideas.models.IdeasModel;
+import com.leon.ideas.models.UserModel;
 import com.leon.ideas.repositories.IdeasRepo;
 
 
@@ -36,7 +38,7 @@ public class IdeasService {
 		}
 
 		// Eliminar Idea
-		public void borrarEvento(Long id) {
+		public void borrarIdea(Long id) {
 			ideasRepo.deleteById(id);
 		}
 		
@@ -45,5 +47,20 @@ public class IdeasService {
 			return ideasRepo.findAll(); 
 		}
 
+		public void likeDislike(IdeasModel unaIdea, UserModel usuario, boolean like) {
+			//COMO like ES DE TIPO BOOLEAN, POR DEFECTO ES TRUE. 
+				if(like) {
+					unaIdea.getLikes().add(usuario);
+			}else {
+				unaIdea.getLikes().remove(usuario);
+			}
+				ideasRepo.save(unaIdea);
+			}
 		
+		public List<IdeasModel> ordenarIdeasDesc() {
+			return ideasRepo.findIdeasOrderByLikesDesc();
+		}
+		public List<IdeasModel> ordenarIdeasAsc() {
+			return ideasRepo.findIdeasOrderByLikesAsc();
+		}
 }

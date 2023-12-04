@@ -1,0 +1,90 @@
+package com.codingdojo.examenblackbelt.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import com.codingdojo.examenblackbelt.models.LogReg;
+import com.codingdojo.examenblackbelt.models.User;
+import com.codingdojo.examenblackbelt.services.CoursesService;
+import com.codingdojo.examenblackbelt.services.UserServices;
+
+import jakarta.servlet.http.HttpSession;
+import jakarta.validation.Valid;
+
+@Controller
+public class UserController {
+	// INYECCION DEPENDENCIAS
+	private final UserServices userService;
+	private final CoursesService coursesService;
+	public UserController(UserServices uSe,CoursesService cSe) {
+		this.userService = uSe;
+		this.coursesService = cSe;
+	}
+
+	@GetMapping("/")
+	public String raiz(Model viewModel) {
+		viewModel.addAttribute("user", new User());
+		viewModel.addAttribute("login", new LogReg());
+		return "/loginreg.jsp";
+	}
+
+	@PostMapping("/registration")
+	public String registro(@Valid @ModelAttribute("user") User usuario, BindingResult resultado, Model viewModel) {
+		//Errores validacion modelo
+		if (resultado.hasErrors()) {
+			// viewModel.addAttribute("user", usuario);
+			viewModel.addAttribute("login", new LogReg());
+			return "loginreg.jsp";
+		}
+		User usuarioRegistrado = userService.registroUsuario(usuario, resultado);
+		if (usuarioRegistrado != null) {
+			viewModel.addAttribute("registro", "gracias por registrarte, ahora inicia sesion");
+		}
+		// sobreescribian info
+		// viewModel.addAttribute("login", new LogReg());
+		viewModel.addAttribute("login", new LogReg());
+		return "loginreg.jsp";
+	}
+
+	@PostMapping("/login")
+	public String iniciarSesion(@Valid @ModelAttribute("login") LogReg loginUser, BindingResult resultado,
+			Model viewModel, HttpSession sesion) {
+		if (resultado.hasErrors()) {
+			viewModel.addAttribute("user", new User());
+			// viewModel.addAttribute("login", new LogReg());
+			return "/loginreg.jsp";
+		}
+		if (userService.autenticarUsuario(loginUser.getEmail(), loginUser.getPassword(), resultado)) {
+			User usuarioLog = userService.encontrarPorEmail(loginUser.getEmail());
+			sesion.setAttribute("userID", usuarioLog.getId());
+			return "redirect:/courses";
+		}
+		viewModel.addAttribute("errorLog", "Por favor intenta de nuevo");
+		viewModel.addAttribute("user", new User());
+		// viewModel.addAttribute("login", new LogReg());
+		return "/loginreg.jsp";
+	}
+
+	@GetMapping("/courses")
+	public String bienvenida(HttpSession sesion, Model viewModel) {
+		Long userId = (Long) sesion.getAttribute("userID");
+		if (userId == null) {
+			return "redirect:/";
+		}
+		User usuario = userService.encontrarPorId(userId);
+		viewModel.addAttribute("usuario", usuario);
+		viewModel.addAttribute("cursos", coursesService.todosCursos());
+		return "/dashboard.jsp";
+	}
+
+	@GetMapping("/logout")
+	public String cerrarSesion(HttpSession sesion) {
+		sesion.setAttribute("userID", null);
+		return "redirect:/";
+	}
+
+}

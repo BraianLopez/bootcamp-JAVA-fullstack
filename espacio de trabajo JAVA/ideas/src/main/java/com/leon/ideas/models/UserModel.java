@@ -3,12 +3,16 @@ package com.leon.ideas.models;
 import java.util.Date;
 import java.util.List;
 
+
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Transient;
@@ -48,7 +52,12 @@ public class UserModel {
 	// Relacion 1:n hacia Ideas
 		@OneToMany(mappedBy = "creador", fetch = FetchType.LAZY)
 		private List<IdeasModel> ideasCreadas;
-	
+		//RELACION MUCHOS A MUCHOS CON IDEAS
+		@ManyToMany(fetch=FetchType.LAZY)
+		@JoinTable(name="likes",
+		joinColumns=@JoinColumn(name="user_id"),
+		inverseJoinColumns=@JoinColumn(name="idea_id"))
+		private List<IdeasModel> likeIdea;
 	
 	//GETTERS Y SETTERS
 	public UserModel() {
@@ -92,6 +101,22 @@ public class UserModel {
 
 	public void setPasswordConfirmation(String passwordConfirmation) {
 		this.passwordConfirmation = passwordConfirmation;
+	}
+
+	public List<IdeasModel> getIdeasCreadas() {
+		return ideasCreadas;
+	}
+
+	public void setIdeasCreadas(List<IdeasModel> ideasCreadas) {
+		this.ideasCreadas = ideasCreadas;
+	}
+
+	public List<IdeasModel> getLikeIdea() {
+		return likeIdea;
+	}
+
+	public void setLikeIdea(List<IdeasModel> likeIdea) {
+		this.likeIdea = likeIdea;
 	}
 
 	public Date getCreatedAt() {

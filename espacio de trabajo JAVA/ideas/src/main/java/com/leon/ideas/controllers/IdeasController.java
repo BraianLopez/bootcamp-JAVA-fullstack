@@ -1,5 +1,7 @@
 package com.leon.ideas.controllers;
 
+import java.util.List;
+
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -61,14 +63,14 @@ public class IdeasController {
 	@GetMapping("/ideas/{id}")
 	public String mostrarIdea(@ModelAttribute("ideas") IdeasModel ideas, BindingResult resultado, HttpSession sesion,
 			Model viewModel) {
+		// validar la sesion del usuario
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
 			return "redirect:/";
 		}
 		UserModel usuario = userServ.encontrarUserPorId(userId);
-		viewModel.addAttribute("usuario", usuario);
-
 		IdeasModel unaIdea = ideasService.encontrarIdeaPorId(ideas.getId());
+		viewModel.addAttribute("usuario", usuario);
 		viewModel.addAttribute("unaIdea", unaIdea);
 		return "show.jsp";
 	}
@@ -82,7 +84,7 @@ public class IdeasController {
 		}
 		IdeasModel unaIdea = ideasService.encontrarIdeaPorId(idIdea);
 		if (unaIdea == null) {
-			return "redirect:/";
+			return "redirect:/ideas";
 		}
 		UserModel usuario = userServ.encontrarUserPorId(userId);
 		viewModel.addAttribute("usuario", usuario);
@@ -92,7 +94,7 @@ public class IdeasController {
 	}
 
 	@PutMapping("/ideas/{id}/edit")
-	public String editandoIdea(@Valid @ModelAttribute("ideas") IdeasModel ideas, BindingResult resultado,
+	public String editandoIdea(@Valid @ModelAttribute("ideas") IdeasModel idea, BindingResult resultado,
 			@PathVariable("id") Long idIdea, HttpSession sesion, Model viewModel) {
 		Long userId = (Long) sesion.getAttribute("userID");
 		if (userId == null) {
@@ -101,11 +103,59 @@ public class IdeasController {
 		UserModel usuario = userServ.encontrarUserPorId(userId);
 		if (resultado.hasErrors()) {
 			viewModel.addAttribute("usuario", usuario);
+			viewModel.addAttribute("unaIdea", idea);
+			viewModel.addAttribute("idIdea", idIdea);
 			return "edit.jsp";
 		}
-//		IdeasModel unaIdea = ideasService.encontrarIdeaPorId(idIdea);
-//		unaIdea.setIdea(unaIdea.getIdea());
-		ideasService.actualizarIdea(ideas);
+		ideasService.actualizarIdea(idea);
+		return "redirect:/ideas";
+	}
+	@GetMapping("/ideas/{idIdea}/{idUsuario}/{opcion}")
+	public String likeDislike(@PathVariable("idIdea") Long idIdea,
+			@PathVariable("idUsuario") Long idUsuario,
+			@PathVariable("opcion") String opcion, HttpSession sesion) {
+		//VALIDAR SI LA SESION ESTA ACTIVA
+				Long userId = (Long) sesion.getAttribute("userID");
+				if (userId == null) {
+					return "redirect:/";
+				}
+				IdeasModel unaIdea = ideasService.encontrarIdeaPorId(idIdea); 	
+				boolean likeDislike =(opcion.equals("like"));
+				UserModel usuario = userServ.encontrarUserPorId(userId);
+				ideasService.likeDislike(unaIdea, usuario, likeDislike);
+				return"redirect:/ideas";
+	}
+	
+	@GetMapping("/ideas/high")
+	public String ordenarPorLikesAsc(Model viewModel, HttpSession sesion) {
+		//VALIDAR SI LA SESION ESTA ACTIVA
+		Long userId = (Long) sesion.getAttribute("userID");
+		if (userId == null) {
+			return "redirect:/";
+		}
+		UserModel usuario = userServ.encontrarUserPorId(userId);
+		viewModel.addAttribute("usuario", usuario);
+		List<IdeasModel> ordenarPorMasLikes = ideasService.ordenarIdeasAsc();
+		viewModel.addAttribute("likesHigh",ordenarPorMasLikes);
+		return"highlikes.jsp";
+	}
+	@GetMapping("/ideas/low")
+	public String ordenarPorLikesDesc(Model viewModel, HttpSession sesion) {
+		//VALIDAR SI LA SESION ESTA ACTIVA
+		Long userId = (Long) sesion.getAttribute("userID");
+		if (userId == null) {
+			return "redirect:/";
+		}
+		
+		UserModel usuario = userServ.encontrarUserPorId(userId);
+		viewModel.addAttribute("usuario", usuario);
+		List<IdeasModel> ordenarPorMenosLikes = ideasService.ordenarIdeasDesc();
+		viewModel.addAttribute("likesLow",ordenarPorMenosLikes);
+		return"lowlikes.jsp";
+	}
+	@GetMapping("/ideas/{id}/delete")
+	public String eliminarIdea(@PathVariable("id") Long idIdea) {
+		ideasService.borrarIdea(idIdea);
 		return "redirect:/ideas";
 	}
 }

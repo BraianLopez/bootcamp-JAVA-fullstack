@@ -3,7 +3,7 @@
     padding: 0;
     /* outline: 2px solid red; */
 }
-div.container{
+.container{
     width: 970px;
     margin: 0 auto;
     background: #D4D2AE;
@@ -16,8 +16,23 @@ header{
     font-weight: bolder;
 }
 
-img.titulo{
+.titulo{
     width: 100px;
     height: 60px;
     background-color: white;
 }
+.color1{
+    border: 5px solid rgb(3, 3, 3);
+    width: 150px;
+    height: 150px;
+    padding:15px;
+    background-color: #82B4EE;
+}
+.color2{
+    border: 5px solid rgb(3, 3, 3);
+    width: 150px;
+    height: 150px;
+    padding:15px;
+    background-color: rgb(243, 104, 112);
+}
+

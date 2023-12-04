@@ -1,6 +1,8 @@
 package com.leon.ideas.models;
 
 import java.util.Date;
+import java.util.List;
+
 
 
 import jakarta.persistence.Column;
@@ -10,6 +12,8 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.PrePersist;
 import jakarta.persistence.PreUpdate;
@@ -38,6 +42,12 @@ public class IdeasModel {
 	@JoinColumn(name = "user_id")
 	private UserModel creador;
 
+	@ManyToMany(fetch=FetchType.LAZY)
+	@JoinTable(name="likes",
+	joinColumns=@JoinColumn(name="idea_id"),
+	inverseJoinColumns=@JoinColumn(name="user_id"))
+	private List<UserModel> likes;
+	
 	public IdeasModel() {
 
 	}
@@ -82,6 +92,15 @@ public class IdeasModel {
 		this.creador = creador;
 	}
 	
+	
+	public List<UserModel> getLikes() {
+		return likes;
+	}
+
+	public void setLikes(List<UserModel> likes) {
+		this.likes = likes;
+	}
+
 	@PrePersist
 	protected void onCreate() {
 		this.createdAt = new Date();
